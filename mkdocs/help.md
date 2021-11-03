@@ -5,7 +5,7 @@
 
 ## Documentation
 
-Link to the documentation of the current version.
+[**Documentation**](https://zen-masters.github.io/Zen-Sets/)
 
 ## ![Discord](img/icons/services/discord-16.png) [**Discord**](https://discord.gg/wGpFeME)
 
@@ -13,4 +13,4 @@ Link to the documentation of the current version.
 
 ## Version
 
-Current version of Zen Sets
+Current version of Zen Sets is v1.0

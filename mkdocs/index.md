@@ -24,7 +24,7 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 
 **Enjoy this experience with us!**
 
-![Gumroad](img/icons/services/gumroad-16.png) [**Gumroad**](https://sergeytyapkin.gumroad.com/l/zensets) | ![BlenderMarket](img/icons/services/blendermarket-16.png) [**BlenderMarket**](https://www.blendermarket.com/products/zen-uv) | ![Discord](img/icons/services/discord-16.png) [**Discord**](https://discord.gg/wGpFeME)
+![Gumroad](img/icons/services/gumroad-16.png) [**Gumroad**](https://sergeytyapkin.gumroad.com/l/zensets) | ![BlenderMarket](img/icons/services/blendermarket-16.png) [**BlenderMarket**](https://www.blendermarket.com/products/zen-sets) | ![Discord](img/icons/services/discord-16.png) [**Discord**](https://discord.gg/wGpFeME)
 
 <!-- blank line -->
 ----
