@@ -35,7 +35,9 @@ One element (Vertex, Edge, Face) may belong only to one group and all groups or 
 
 ### Groups List
 ![n_panel_list](img/screen/n_panel/n_panel_list.png)
+
 Contains the following information:
+
 - **Group Color**
 - **Group Name**
 - **Mesh Elements Count**
