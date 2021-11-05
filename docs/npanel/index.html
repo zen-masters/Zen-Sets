@@ -69,6 +69,8 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#groups-list">Groups List</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#selection-to-group">Selection to group</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#append">Append</a>
@@ -83,9 +85,29 @@
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#deselect">Deselect</a>
     </li>
+    <li class="toctree-l4"><a class="reference internal" href="#intersect">Intersect</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#smart-select">Smart select</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#display-group">Display group</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#hide">Hide</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unhide">Unhide</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#invert-hide">Invert hide</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#display">Display</a>
+    </li>
         </ul>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tools-subpanel">Tools Subpanel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#help-subpanel">Help Subpanel</a>
     </li>
     </ul>
                     </li>
@@ -149,6 +171,7 @@
 <p><strong>NOTICE! This panel is available only in edit mode, when the object being edited as a mesh</strong></p>
 </blockquote>
 <p><img alt="npanel" src="../img/screen/n_panel/n_panel_preview.gif" /></p>
+<hr />
 <h2 id="main-subpanel">Main Subpanel</h2>
 <p>Contains all basic functionality for managing Zen Sets</p>
 <p><img alt="npanel_main" src="../img/screen/n_panel/n_panel_main.png" /></p>
@@ -167,21 +190,56 @@
 <h4 id="parts-mode">Parts mode</h4>
 <p>One element (Vertex, Edge, Face) may belong only to one group and all groups or active group can be displayed in the viewport</p>
 <p><img alt="parts_mode" src="../img/screen/parts_mode.gif" /></p>
+<h3 id="groups-list">Groups List</h3>
+<p><img alt="n_panel_list" src="../img/screen/n_panel/n_panel_list.png" /></p>
+<p>Contains the following information:</p>
+<ul>
+<li><strong>Group Color</strong></li>
+<li><strong>Group Name</strong></li>
+<li><strong>Mesh Elements Count</strong></li>
+<li><strong>Objects Count</strong></li>
+</ul>
 <h3 id="selection-to-group">Selection to group</h3>
 <h4 id="append">Append</h4>
-<p>Append selected Elements to selected Group</p>
+<p>Appends selected Elements to selected Group</p>
 <p><img alt="select_append" src="../img/screen/n_panel/select_append.gif" /></p>
 <h4 id="remove">Remove</h4>
-<p>Remove selected Elements from selected Group</p>
+<p>Removes selected Elements from selected Group</p>
 <p><img alt="select_remove" src="../img/screen/n_panel/select_remove.gif" /></p>
 <h3 id="group-to-selection">Group to selection</h3>
 <h4 id="select">Select</h4>
-<p>Select Elements of selected Group
+<p>Selects Elements of selected Group
 - <strong>Clear selection</strong> - an option to clear previous selection</p>
 <p><img alt="group_select" src="../img/screen/n_panel/group_select.gif" /></p>
 <h4 id="deselect">Deselect</h4>
-<p>Remove selected Group Elements from mesh selection
-<img alt="group_deselect" src="../img/screen/n_panel/group_deselect.gif" /></p>
+<p>Removes selected Group Elements from mesh selection</p>
+<p><img alt="group_deselect" src="../img/screen/n_panel/group_deselect.gif" /></p>
+<h4 id="intersect">Intersect</h4>
+<p>Selects Group Elements intersected with mesh selection</p>
+<p><img alt="group_intersect" src="../img/screen/n_panel/group_intersect.gif" /></p>
+<h4 id="smart-select">Smart select</h4>
+<p>Depends on selected mesh elements and has the next behaviour:
+- <strong>Select Group by selected Elements in Viewport</strong>
+If mesh selection belongs to Zen Sets group, all group elements are selected and other elements are deselected
+- <strong>Deselect Active Group and select Elements that does not belong to any group</strong>
+If mesh selection does not belong to any Zen Sets group, the active group is deselected and all mesh elements that don&rsquo;t have group metainformation are selected</p>
+<p><img alt="smart_select" src="../img/screen/n_panel/group_smart_select.gif" /></p>
+<h3 id="display-group">Display group</h3>
+<p>You can highlight the active group in <a href="./#sets-mode">Sets mode</a> or all groups in <a href="./#parts-mode">Parts mode</a>. Also you can hide, unhide active group or hide elements that don&rsquo;t belong to the active group</p>
+<p><img alt="group_hide_unhide" src="../img/screen/n_panel/group_hide_unhide.gif" /></p>
+<h4 id="hide">Hide</h4>
+<p>Hides active group</p>
+<h4 id="unhide">Unhide</h4>
+<p>Unhides active group</p>
+<h4 id="invert-hide">Invert hide</h4>
+<p>Hides elements that don&rsquo;t belong to active group</p>
+<h4 id="display">Display</h4>
+<p>Toggles the display of the active group in <a href="./#sets-mode">Sets Mode</a> or all groups in <a href="./#parts-mode">Parts Mode</a></p>
+<p><img alt="group_highlight" src="../img/screen/n_panel/group_highlight.gif" /></p>
+<h2 id="tools-subpanel">Tools Subpanel</h2>
+<p><img alt="tools" src="../img/screen/n_panel/tools.png" /></p>
+<h2 id="help-subpanel"><a href="../help/">Help</a> Subpanel</h2>
+<p><img alt="" src="../img/screen/help.png" /></p>
               
             </div>
           </div>
