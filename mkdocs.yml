@@ -3,6 +3,7 @@ site_description: Zen Sets for Blender Documentation
 nav:
     - Introduction: index.md
     - Installation: installation.md
+    - N-Panel: npanel.md
     # - Pie Menu: pie-menu.md
     # - Advanced UV Maps: adv_uv-maps.md
     # - Seam Groups: seam_groups.md

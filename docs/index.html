@@ -59,7 +59,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#supported-elements">Supported Elements</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#main-cool-features">Main (Cool) Features</a>
+    <li class="toctree-l2"><a class="reference internal" href="#main-features">Main Features</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#default-shortcuts">Default Shortcuts</a>
     </li>
@@ -68,6 +68,10 @@
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="npanel/">N-Panel</a>
                     </li>
                 </ul>
                 <ul>
@@ -124,16 +128,22 @@
             <div class="section">
               
                 <h1 id="zen-sets-for-blender-10">Zen Sets for Blender 1.0</h1>
-<p><img alt="IntroSets" src="img/IntroSets.png" /></p>
+<!-- ![IntroSets](img/IntroSets.png) -->
+<!-- blank line -->
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe width="1018" height="573" src="https://www.youtube.com/embed/Sn8UyfsNUO4" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<!-- blank line -->
+<p><br/></p>
 <p><strong>Zen Sets</strong> allow you to organize the mesh with visual grouping information. The mesh is only marked with metainformation and is still one contiguous surface. It is another way to control visibility state of the mesh in Blender Edit Mode</p>
 <h2 id="modes">Modes</h2>
 <p><img alt="Modes" src="img/screen/modes.png" /></p>
 <h3 id="sets-mode">Sets mode</h3>
 <p>One element (Vertex, Edge, Face) may be assigned to more than one group and only active group is displayed in the viewport</p>
-<p><img alt="sets_mode" src="img/screen/sets_mode.png" /></p>
+<p><img alt="sets_mode" src="img/screen/sets_mode.gif" /></p>
 <h3 id="parts-mode">Parts mode</h3>
 <p>One element (Vertex, Edge, Face) may belong only to one group and all groups or active group can be displayed in the viewport</p>
-<p><img alt="parts_mode" src="img/screen/parts_mode.png" /></p>
+<p><img alt="parts_mode" src="img/screen/parts_mode.gif" /></p>
 <h2 id="supported-elements">Supported Elements</h2>
 <p><img alt="Elements" src="img/screen/elements.png" /></p>
 <p>Geometry can be assigned to a vertex, edge or face group and each group is represented as a different color in the 3D Viewport</p>
@@ -142,10 +152,16 @@
 <!-- blank line -->
 <hr />
 <!-- blank line -->
-<h2 id="main-cool-features">Main (Cool) Features</h2>
+<h2 id="main-features">Main Features</h2>
 <ul>
-<li>Intuitive UI with multifunctional Pie menu and WorkSpaceTool. <strong>You will like it!</strong></li>
-<li>Quick support on the <a href="https://discord.gg/wGpFeME"><strong>Discord channel</strong></a>.</li>
+<li><strong>Intuitive UI</strong> with multifunctional <strong><a href="npanel/">N-Panel</a>, Pie menu and Workspace Tool</strong>.</li>
+<li><strong>Display System</strong> that helps find and select each Group by displaying it by color in the viewport.</li>
+<li><strong>Zen Sets Workspace Tool</strong> for fast switching between Elements Modes. It also provides a simulation of Zbrush Polygroup behavior for Selecting and Hiding Groups in Parts Mode.</li>
+<li><strong>Import / Export Zen Sets Groups</strong> to native Vertex Groups, Face Maps, Vertex Colors, and vice versa.</li>
+<li><strong>Auto Groups Operator</strong> to create Groups automatically from linked faces.</li>
+<li><strong>Create Objects from Groups Operator</strong>. Divide mesh into Objects using Zen Sets Groups.</li>
+<li><strong>Assign Materials to Groups Operator</strong>.</li>
+<li><strong>Possibility to use Zen Sets Groups by external operators</strong>. Implement Zen Sets for your own pipelines.</li>
 </ul>
 <h2 id="default-shortcuts">Default Shortcuts</h2>
 <ul>
@@ -204,6 +220,6 @@
 </html>
 
 <!--
-MkDocs version : 1.2.2
-Build Date UTC : 2021-11-03 12:22:25.681983+00:00
+MkDocs version : 1.2.3
+Build Date UTC : 2021-11-05 15:17:03.911517+00:00
 -->

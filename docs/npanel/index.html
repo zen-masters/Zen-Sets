@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Installation - Zen Sets for Blender</title>
+  <title>N-Panel - Zen Sets for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Installation";
-    var mkdocs_page_input_path = "installation.md";
+    var mkdocs_page_name = "N-Panel";
+    var mkdocs_page_input_path = "npanel.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -50,14 +50,44 @@
                     <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../npanel/">N-Panel</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">N-Panel</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#main-subpanel">Main Subpanel</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#active-zen-sets-element-switch">Active Zen Sets Element Switch</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#active-zen-sets-mode-switch">Active Zen Sets Mode Switch</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#sets-mode">Sets mode</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#parts-mode">Parts mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selection-to-group">Selection to group</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#append">Append</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#remove">Remove</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#group-to-selection">Group to selection</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#select">Select</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#deselect">Deselect</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -101,7 +131,7 @@
     
       
     
-    <li>Installation</li>
+    <li>N-Panel</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -113,10 +143,45 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="zen-sets-installation">Zen Sets Installation</h1>
-<p><img alt="Installation" src="../img/screen/installation.png" /></p>
-<p>To install addon go to <strong>Preferences &mdash; Addons &mdash; Install</strong>, then you can enable addon by clicking on the checkbox.</p>
-<!-- Also, you can [**watch the video**](https://youtu.be/dqpgWcRBE4o?t=17) how to install it. -->
+                <h1 id="zen-sets-n-panel">Zen Sets N-Panel</h1>
+<p>N-Panel contains all Zen Sets addon functionality and consits of Main, Tools, Preferences and Help collapsible subpanels.</p>
+<blockquote>
+<p><strong>NOTICE! This panel is available only in edit mode, when the object being edited as a mesh</strong></p>
+</blockquote>
+<p><img alt="npanel" src="../img/screen/n_panel/n_panel_preview.gif" /></p>
+<h2 id="main-subpanel">Main Subpanel</h2>
+<p>Contains all basic functionality for managing Zen Sets</p>
+<p><img alt="npanel_main" src="../img/screen/n_panel/n_panel_main.png" /></p>
+<h3 id="active-zen-sets-element-switch">Active Zen Sets Element Switch</h3>
+<p>Gives an option to change type of mesh geometry (vertex, edge or face) that can be assigned to a group</p>
+<p><img alt="npanel_elements" src="../img/screen/elements.png" /></p>
+<blockquote>
+<p><strong>NOTICE! Zen Sets active element is synchronized with the Blender mesh selection mode</strong></p>
+</blockquote>
+<p><img alt="elem_sync" src="../img/screen/elements_sync.gif" /></p>
+<h3 id="active-zen-sets-mode-switch">Active Zen Sets Mode Switch</h3>
+<p><img alt="Modes" src="../img/screen/modes.png" /></p>
+<h4 id="sets-mode">Sets mode</h4>
+<p>One element (Vertex, Edge, Face) may be assigned to more than one group and only active group is displayed in the viewport</p>
+<p><img alt="sets_mode" src="../img/screen/sets_mode.gif" /></p>
+<h4 id="parts-mode">Parts mode</h4>
+<p>One element (Vertex, Edge, Face) may belong only to one group and all groups or active group can be displayed in the viewport</p>
+<p><img alt="parts_mode" src="../img/screen/parts_mode.gif" /></p>
+<h3 id="selection-to-group">Selection to group</h3>
+<h4 id="append">Append</h4>
+<p>Append selected Elements to selected Group</p>
+<p><img alt="select_append" src="../img/screen/n_panel/select_append.gif" /></p>
+<h4 id="remove">Remove</h4>
+<p>Remove selected Elements from selected Group</p>
+<p><img alt="select_remove" src="../img/screen/n_panel/select_remove.gif" /></p>
+<h3 id="group-to-selection">Group to selection</h3>
+<h4 id="select">Select</h4>
+<p>Select Elements of selected Group
+- <strong>Clear selection</strong> - an option to clear previous selection</p>
+<p><img alt="group_select" src="../img/screen/n_panel/group_select.gif" /></p>
+<h4 id="deselect">Deselect</h4>
+<p>Remove selected Group Elements from mesh selection
+<img alt="group_deselect" src="../img/screen/n_panel/group_deselect.gif" /></p>
               
             </div>
           </div>
@@ -124,10 +189,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../npanel/" class="btn btn-neutral float-right" title="N-Panel">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -153,10 +218,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../npanel/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
