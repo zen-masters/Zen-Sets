@@ -73,6 +73,30 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#toolbar">Toolbar</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sidebar">Sidebar</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#add-new-group">Add New Group</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#delete-active-group">Delete Active Group</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#show-popup-menu">Show Popup menu</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#move-active-group-up">Move Active Group Up</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#move-active-group-down">Move Active Group Down</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#delete-groups">Delete Groups</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#main-panel-popup-menu">Main panel Popup Menu</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#select-all-objects-by-group-id">Select all objects by Group ID</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#batch-rename-groups">Batch rename Groups</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#selection-to-group">Selection to group</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#append">Append</a>
@@ -178,11 +202,12 @@
             <div class="section">
               
                 <h1 id="zen-sets-n-panel">Zen Sets N-Panel</h1>
-<p>N-Panel contains all Zen Sets addon functionality and consits of Main, <a href="../imp_exp/">Import-Export</a>, <a href="../tools/">Tools</a>, <a href="../preferences/">Preferences</a> and <a href="../help/">Help</a> collapsible subpanels.</p>
-<blockquote>
-<p><strong>NOTICE! This panel is available only in edit mode, when the object being edited as a mesh</strong></p>
-</blockquote>
-<p><img alt="npanel" src="../img/screen/n_panel/n_panel_preview.gif" /></p>
+<p>N-Panel contains all Zen Sets addon functionality and consits of <a href="#main-subpanel">Main</a>, <a href="../imp_exp/">Import-Export</a>, <a href="../tools/">Tools</a>, <a href="../preferences/">Preferences</a> and <a href="../help/">Help</a> collapsible subpanels.</p>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><strong>This panel is available only in edit mode, when the object is being edited as a mesh</strong></p>
+</div>
+<p><img alt="npanel" src="../img/screen/n_panel/n_panel_preview.gif" />    </p>
 <hr />
 <h2 id="main-subpanel">Main Subpanel</h2>
 <p>Contains all basic functionality for managing Zen Sets</p>
@@ -190,10 +215,16 @@
 <h3 id="active-zen-sets-element-switch">Active Zen Sets Element Switch</h3>
 <p>Gives an option to change type of mesh geometry (vertex, edge or face) that can be assigned to a group</p>
 <p><img alt="npanel_elements" src="../img/screen/elements.png" /></p>
-<blockquote>
-<p><strong>NOTICE! Zen Sets active element is synchronized with the Blender mesh selection mode</strong></p>
-</blockquote>
-<p><img alt="elem_sync" src="../img/screen/elements_sync.gif" /></p>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><strong>Zen Sets active element is synchronized with the Blender mesh selection mode by default</strong>
+<img alt="elem_sync" src="../img/screen/elements_sync.gif" /></p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><strong>You can disable synchronization with mesh selection in addon preferences</strong>
+<img alt="sync_with_mesh_select" src="../img/screen/preferences/sync_with_mesh_select.png" /></p>
+</div>
 <h3 id="active-zen-sets-mode-switch">Active Zen Sets Mode Switch</h3>
 <p><img alt="Modes" src="../img/screen/modes.png" /></p>
 <h4 id="sets-mode">Sets mode</h4>
@@ -213,31 +244,71 @@ Shows how many mesh elements (verts, edges or faces) are in the current group</l
 <li><strong>Objects Count</strong>
 Shows how many objects in edit mode has elements with the same group</li>
 <li><strong>Visibility Group Icon (eye icon)</strong><ul>
-<li>Group is completely visible
-<img alt="n_panel_list_visible_icon" src="../img/screen/n_panel/n_panel_list_visible_icon.png" /></li>
-<li>Group is partially visible
-<img alt="n_panel_list_partially_visible_icon" src="../img/screen/n_panel/n_panel_list_partially_visible_icon.png" /></li>
-<li>Group is completely hidden
-<img alt="n_panel_list_hidden_icon" src="../img/screen/n_panel/n_panel_list_hidden_icon.png" /></li>
+<li>Group is completely visible<ul>
+<li><img alt="n_panel_list_visible_icon" src="../img/screen/n_panel/n_panel_list_visible_icon.png" /></li>
+</ul>
+</li>
+<li>Group is partially visible<ul>
+<li><img alt="n_panel_list_partially_visible_icon" src="../img/screen/n_panel/n_panel_list_partially_visible_icon.png" /></li>
+</ul>
+</li>
+<li>Group is completely hidden<ul>
+<li><img alt="n_panel_list_hidden_icon" src="../img/screen/n_panel/n_panel_list_hidden_icon.png" /></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h3 id="toolbar">Toolbar</h3>
 <p><img alt="n_panel_toolbar" src="../img/screen/n_panel/n_panel_toolbar.png" /></p>
-<p>The Toolbar shows buttons for each tool</p>
-<p><img alt="n_panel_toolbar_animation" src="../img/screen/n_panel/n_panel_toolbar_animation.gif" />
-- <strong>Display Groups in Viewport</strong>
-<img alt="n_panel_toolbar_overlay" src="../img/screen/n_panel/n_panel_toolbar_overlay.png" />
-- <strong>Selection follows Selected Group</strong> (Select all elements after Selected Group has been changed)
-<img alt="n_panel_toolbar_single_select" src="../img/screen/n_panel/n_panel_toolbar_single_select.png" />
-- <strong>Auto Frame Selected Elements</strong> (Move the view to the Selected elements center when selection changes)
-<img alt="n_panel_toolbar_auto_frame" src="../img/screen/n_panel/n_panel_toolbar_auto_frame.png" />
-- <strong>Display count of objects that have the Group</strong>
-<img alt="n_panel_toolbar_objects_info" src="../img/screen/n_panel/n_panel_toolbar_objects_info.png" />
-- <strong>Display hidden Groups Info</strong>
-<img alt="n_panel_list_visible_icon" src="../img/screen/n_panel/n_panel_toolbar_visibility_info.png" />
-- <strong>Display all scene Groups or selected object groups</strong>
-<img alt="n_panel_toolbar_display_all_scene_groups" src="../img/screen/n_panel/n_panel_toolbar_display_all_scene_groups.png" /></p>
+<p>The Toolbar shows <a href="#groups-list">Groups List</a> main settings and <a href="#display">Display toggle button</a></p>
+<p><img alt="n_panel_toolbar_animation" src="../img/screen/n_panel/n_panel_toolbar_animation.gif" /></p>
+<ul>
+<li>
+<p><img alt="n_panel_toolbar_overlay" src="../img/screen/n_panel/n_panel_toolbar_overlay.png" /> <strong>Display Groups in Viewport</strong></p>
+</li>
+<li>
+<p><img alt="n_panel_toolbar_single_select" src="../img/screen/n_panel/n_panel_toolbar_single_select.png" /> <strong>Selection follows Selected Group</strong> (Select all elements after Selected Group has been changed)</p>
+</li>
+<li>
+<p><img alt="n_panel_toolbar_auto_frame" src="../img/screen/n_panel/n_panel_toolbar_auto_frame.png" /> <strong>Auto Frame Selected Elements</strong> (Move the view to the Selected elements center when selection changes)</p>
+</li>
+<li>
+<p><img alt="n_panel_toolbar_objects_info" src="../img/screen/n_panel/n_panel_toolbar_objects_info.png" /> <strong>Display count of objects that have the Group</strong></p>
+</li>
+<li>
+<p><img alt="n_panel_list_visible_icon" src="../img/screen/n_panel/n_panel_toolbar_visibility_info.png" /> <strong>Display hidden Groups Info</strong></p>
+</li>
+<li>
+<p><img alt="n_panel_toolbar_display_all_scene_groups" src="../img/screen/n_panel/n_panel_toolbar_display_all_scene_groups.png" /> <strong>Display all scene Groups or selected object groups</strong></p>
+</li>
+</ul>
+<h3 id="sidebar">Sidebar</h3>
+<p><img alt="sidebar" src="../img/screen/n_panel/sidebar.png" /></p>
+<h4 id="add-new-group">Add New Group</h4>
+<p>Creates new Group from selected mesh elements</p>
+<h4 id="delete-active-group">Delete Active Group</h4>
+<p>Deletes Active Group from the selected Objects</p>
+<h4 id="show-popup-menu">Show Popup menu</h4>
+<p>Shows main panel Popup menu</p>
+<h4 id="move-active-group-up">Move Active Group Up</h4>
+<p>Moves active Group up in the Group List</p>
+<h4 id="move-active-group-down">Move Active Group Down</h4>
+<p>Moves active Group down in the Group List</p>
+<h4 id="delete-groups">Delete Groups</h4>
+<ul>
+<li><strong>Empty Groups</strong>
+Deletes Groups that does not contain any mesh elements</li>
+<li><strong>Delete All Groups</strong><ul>
+<li>Deletes all groups in the Scene if <strong>Display all scene Groups</strong> option <strong>is set</strong></li>
+<li>Deletes all groups in the Selected Objects if <strong>Display all scene Groups</strong> option <strong>is unset</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="main-panel-popup-menu">Main panel Popup Menu</h3>
+<p><img alt="popup" src="../img/screen/n_panel/popup.png" /></p>
+<h4 id="select-all-objects-by-group-id">Select all objects by Group ID</h4>
+<h4 id="batch-rename-groups">Batch rename Groups</h4>
 <h3 id="selection-to-group">Selection to group</h3>
 <h4 id="append">Append</h4>
 <p>Appends selected Elements to selected Group</p>
@@ -257,11 +328,17 @@ Shows how many objects in edit mode has elements with the same group</li>
 <p>Selects Group Elements intersected with mesh selection</p>
 <p><img alt="group_intersect" src="../img/screen/n_panel/group_intersect.gif" /></p>
 <h4 id="smart-select">Smart select</h4>
-<p>Depends on selected mesh elements and has the next behaviour:
-- <strong>Select Group by selected Elements in Viewport</strong>
-If mesh selection belongs to Zen Sets group, all group elements are selected and other elements are deselected
-- <strong>Deselect Active Group and select Elements that does not belong to any group</strong>
+<p>Depends on selected mesh elements and has the next behaviour:</p>
+<ul>
+<li>
+<p><strong>Select Group by selected Elements in Viewport</strong>
+If mesh selection belongs to Zen Sets group, all group elements are selected and other elements are deselected</p>
+</li>
+<li>
+<p><strong>Deselect Active Group and select Elements that does not belong to any group</strong>
 If mesh selection does not belong to any Zen Sets group, the active group is deselected and all mesh elements that don&rsquo;t have group metainformation are selected</p>
+</li>
+</ul>
 <p><img alt="smart_select" src="../img/screen/n_panel/group_smart_select.gif" /></p>
 <h3 id="display-group">Display group</h3>
 <p>You can highlight the active group in <a href="./#sets-mode">Sets mode</a> or all groups in <a href="./#parts-mode">Parts mode</a>. Also you can hide, unhide active group or hide elements that don&rsquo;t belong to the active group</p>
@@ -279,7 +356,7 @@ If mesh selection does not belong to any Zen Sets group, the active group is des
 <h2 id="tools-subpanel"><a href="../tools/">Tools Subpanel</a></h2>
 <p><img alt="tools" src="../img/screen/n_panel/tools.png" /></p>
 <h2 id="help-subpanel"><a href="../help/">Help Subpanel</a></h2>
-<p><img alt="" src="../img/screen/help.png" /></p>
+<p><img alt="help" src="../img/screen/help.png" /></p>
               
             </div>
           </div>
