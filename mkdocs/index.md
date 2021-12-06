@@ -37,13 +37,14 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 <!-- blank line -->
 ## Main Features
 
-- **Intuitive UI** with multifunctional **[N-Panel](npanel.md), Pie menu and Workspace Tool**.
-- **Display System** that helps find and select each Group by displaying it by color in the viewport.
+- [**Intuitive UI**](npanel.md) with multifunctional **[N-Panel](npanel.md), Pie menu and Workspace Tool**.
+- **Context-sensitive help** that is obtained from an every button in UI by pressing F1.
+- [**Display System**](npanel.md#display-group) that helps find and select each Group by displaying it by color in the viewport.
 - **Zen Sets Workspace Tool** for fast switching between Elements Modes. It also provides a simulation of Zbrush Polygroup behavior for Selecting and Hiding Groups in Parts Mode.
-- **Import / Export Zen Sets Groups** to native Vertex Groups, Face Maps, Vertex Colors, and vice versa.
-- **Auto Groups Operator** to create Groups automatically from linked faces.
-- **Create Objects from Groups Operator**. Divide mesh into Objects using Zen Sets Groups.
-- **Assign Materials to Groups Operator**.
+- [**Import / Export Zen Sets Groups**](imp_exp.md) to native Vertex Groups, Face Maps, Vertex Colors, and vice versa.
+- [**Auto Groups Operator**](tools.md#auto-groups) to create Groups automatically from linked faces.
+- [**Create Objects from Groups Operator**](tools.md#create-objects-from-groups). Divide mesh into Objects using Zen Sets Groups.
+- [**Assign Materials to Groups Operator**](tools.md#assign-materials-to-groups).
 - **Possibility to use Zen Sets Groups by external operators**. Implement Zen Sets for your own pipelines.
 
 ## Default Shortcuts

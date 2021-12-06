@@ -39,6 +39,8 @@ One element (Vertex, Edge, Face) may belong only to one group and all groups or 
 
 ![parts_mode](img/screen/parts_mode.gif)
 
+---
+
 ### Groups List
 ![n_panel_list](img/screen/n_panel/n_panel_list.png)
 
@@ -57,6 +59,8 @@ Shows how many objects in edit mode has elements with the same group
         - ![n_panel_list_partially_visible_icon](img/screen/n_panel/n_panel_list_partially_visible_icon.png)
     - Group is completely hidden
         - ![n_panel_list_hidden_icon](img/screen/n_panel/n_panel_list_hidden_icon.png)
+
+---
 
 ### Toolbar
 ![n_panel_toolbar](img/screen/n_panel/n_panel_toolbar.png)
@@ -77,6 +81,8 @@ The Toolbar shows [Groups List](#groups-list) main settings and [Display toggle 
 
 - ![n_panel_toolbar_display_all_scene_groups](img/screen/n_panel/n_panel_toolbar_display_all_scene_groups.png) **Display all scene Groups or selected object groups**
 
+---
+
 ### Sidebar
 ![sidebar](img/screen/n_panel/sidebar.png)
 #### Add New Group
@@ -96,11 +102,20 @@ Deletes Groups that does not contain any mesh elements
     * Deletes all groups in the Scene if **Display all scene Groups** option **is set**
     * Deletes all groups in the Selected Objects if **Display all scene Groups** option **is unset**
 
+---
 
 ### Main panel Popup Menu
 ![popup](img/screen/n_panel/popup.png)
 #### Select all objects by Group ID
+Selects and adds to the Edit Mode all Objects that has the Active Group elements
+
+![n_panel_select_all_objects](img/screen/n_panel/n_panel_select_all_objects.gif)
 #### Batch rename Groups
+Option to rename all Groups in the list
+
+![copy_paste_rename](img/screen/n_panel/copy_paste_rename.gif)
+
+---
 
 ### Selection to group
 #### Append
@@ -112,6 +127,8 @@ Appends selected Elements to selected Group
 Removes selected Elements from selected Group
 
 ![select_remove](img/screen/n_panel/select_remove.gif)
+
+---
 
 ### Group to selection
 #### Select
@@ -141,6 +158,8 @@ If mesh selection does not belong to any Zen Sets group, the active group is des
 
 ![smart_select](img/screen/n_panel/group_smart_select.gif)
 
+---
+
 ### Display group
 You can highlight the active group in [Sets mode](npanel.md#sets-mode) or all groups in [Parts mode](npanel.md#parts-mode). Also you can hide, unhide active group or hide elements that don't belong to the active group
 
@@ -153,6 +172,8 @@ Unhides active group
 Hides elements that don't belong to active group
 #### Display
 Toggles the display of the active group in [Sets Mode](npanel.md#sets-mode) or all groups in [Parts Mode](npanel.md#parts-mode)
+
+---
 
 ## [Import-Export Subpanel](imp_exp.md)
 ![imp_exp](img/screen/n_panel/n_panel_imp_exp.png)
