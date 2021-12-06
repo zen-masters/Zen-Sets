@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Changelog - Zen Sets for Blender</title>
+  <title>Changelog - Zen Sets 1.1 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen Sets for Blender</a>
+        <a href=".." class="icon icon-home"> Zen Sets 1.1 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -59,6 +59,14 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../imp_exp/">Import-Export</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
                     </li>
                 </ul>
@@ -77,7 +85,17 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Changelog</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#100">1.00</a>
+    <li class="toctree-l2"><a class="reference internal" href="#110">1.1.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new">New:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement">Enhancement:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix">Fix:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#100">1.0.0</a>
     </li>
     </ul>
                     </li>
@@ -91,7 +109,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen Sets for Blender</a>
+        <a href="..">Zen Sets 1.1 for Blender</a>
       </nav>
 
       
@@ -117,7 +135,45 @@
               
                 <h1 id="changelog">Changelog</h1>
 <hr />
-<h2 id="100">1.00</h2>
+<h2 id="110">1.1.0</h2>
+<h3 id="new">New:</h3>
+<ol>
+<li>N-Panel Toolbar:</li>
+<li>Display Toggle</li>
+<li>Selection Follows Selected Group</li>
+<li>Auto Frame Selected Group</li>
+<li>Objects Group Info toggle button</li>
+<li>Visibility Group Icon (eye icon) (Toggles the visibility of the Group in the 3D View)</li>
+<li>Selected Object Groups | All Scene Groups toggle button</li>
+<li>Undo operations</li>
+<li>Group transfer among modes (Vert Sets Groups to Face Maps Groups etc.) (Copy-Paste clipboard operations)</li>
+<li>Help-context system (Quick operator documentation by pressing F1)</li>
+<li>Option to override all overlay settings (layers opacity, point size, line width etc.)</li>
+<li>Option to override Zen Sets keymaps in all modes (Edit Mode, WorkSpaceTool, Operators)</li>
+<li>Option to find and select all objects in Scene that has the Group</li>
+<li>Option to Batch rename Groups</li>
+<li>Auto Groups delimiters: Normal, Material, Seam, Sharp, UVs</li>
+</ol>
+<h3 id="enhancement">Enhancement:</h3>
+<ol>
+<li>Improved N-Panel interface performance with huge amount of groups (100 and more)</li>
+<li>Avoiding of empty Groups creation in multi-object mode (Add, Append operators)</li>
+<li>Keep groups after Join Objects and Append Objects</li>
+<li>Better performance of overlay draw system</li>
+<li>Import-export operators have been groupped in Menu and Panel</li>
+<li>Multi-object groups represention (ability to see only groups in selected objects or in all Scene)</li>
+<li>Inherit only necessary groups in &lsquo;Create Objects from groups&rsquo; operator instead of all Scene groups</li>
+</ol>
+<h3 id="fix">Fix:</h3>
+<ol>
+<li>Faces overlay Z-Fight if mesh has transformations</li>
+<li>Edges overlay Z-Fight in all modes</li>
+<li>Loosing of groups while switching between objects</li>
+<li>Parts elements deletion after groups deletion</li>
+<li>Global object cleanup to avoid undeleted group layers</li>
+</ol>
+<hr />
+<h2 id="100">1.0.0</h2>
 <ul>
 <li>First Release!</li>
 </ul>

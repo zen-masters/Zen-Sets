@@ -1,8 +1,10 @@
 # Zen Sets N-Panel
-N-Panel contains all Zen Sets addon functionality and consits of Main, Tools, Preferences and Help collapsible subpanels.
-> **NOTICE! This panel is available only in edit mode, when the object being edited as a mesh**
+N-Panel contains all Zen Sets addon functionality and consits of [Main](#main-subpanel), [Import-Export](imp_exp.md), [Tools](tools.md), [Preferences](preferences.md) and [Help](help.md) collapsible subpanels.
 
-![npanel](img/screen/n_panel/n_panel_preview.gif)
+!!! Notice
+    **This panel is available only in edit mode, when the object is being edited as a mesh**
+
+![npanel](img/screen/n_panel/n_panel_preview.gif)    
 
 ---
 
@@ -16,9 +18,13 @@ Gives an option to change type of mesh geometry (vertex, edge or face) that can 
 
 ![npanel_elements](img/screen/elements.png)
 
-> **NOTICE! Zen Sets active element is synchronized with the Blender mesh selection mode**
+!!! Notice
+    **Zen Sets active element is synchronized with the Blender mesh selection mode by default**
+    ![elem_sync](img/screen/elements_sync.gif)
 
-![elem_sync](img/screen/elements_sync.gif)
+!!! Notice
+    **You can disable synchronization with mesh selection in addon preferences**
+    ![sync_with_mesh_select](img/screen/preferences/sync_with_mesh_select.png)
 
 ### Active Zen Sets Mode Switch
 ![Modes](img/screen/modes.png)
@@ -41,7 +47,60 @@ Contains the following information:
 - **Group Color**
 - **Group Name**
 - **Mesh Elements Count**
+Shows how many mesh elements (verts, edges or faces) are in the current group
 - **Objects Count**
+Shows how many objects in edit mode has elements with the same group
+- **Visibility Group Icon (eye icon)**
+    - Group is completely visible
+        - ![n_panel_list_visible_icon](img/screen/n_panel/n_panel_list_visible_icon.png)
+    - Group is partially visible
+        - ![n_panel_list_partially_visible_icon](img/screen/n_panel/n_panel_list_partially_visible_icon.png)
+    - Group is completely hidden
+        - ![n_panel_list_hidden_icon](img/screen/n_panel/n_panel_list_hidden_icon.png)
+
+### Toolbar
+![n_panel_toolbar](img/screen/n_panel/n_panel_toolbar.png)
+
+The Toolbar shows [Groups List](#groups-list) main settings and [Display toggle button](#display)
+
+![n_panel_toolbar_animation](img/screen/n_panel/n_panel_toolbar_animation.gif)
+
+- ![n_panel_toolbar_overlay](img/screen/n_panel/n_panel_toolbar_overlay.png) **Display Groups in Viewport**
+
+- ![n_panel_toolbar_single_select](img/screen/n_panel/n_panel_toolbar_single_select.png) **Selection follows Selected Group** (Select all elements after Selected Group has been changed)
+
+- ![n_panel_toolbar_auto_frame](img/screen/n_panel/n_panel_toolbar_auto_frame.png) **Auto Frame Selected Elements** (Move the view to the Selected elements center when selection changes)
+
+- ![n_panel_toolbar_objects_info](img/screen/n_panel/n_panel_toolbar_objects_info.png) **Display count of objects that have the Group**
+
+- ![n_panel_list_visible_icon](img/screen/n_panel/n_panel_toolbar_visibility_info.png) **Display hidden Groups Info**
+
+- ![n_panel_toolbar_display_all_scene_groups](img/screen/n_panel/n_panel_toolbar_display_all_scene_groups.png) **Display all scene Groups or selected object groups**
+
+### Sidebar
+![sidebar](img/screen/n_panel/sidebar.png)
+#### Add New Group
+Creates new Group from selected mesh elements
+#### Delete Active Group
+Deletes Active Group from the selected Objects
+#### Show Popup menu
+Shows main panel Popup menu
+#### Move Active Group Up
+Moves active Group up in the Group List
+#### Move Active Group Down
+Moves active Group down in the Group List
+#### Delete Groups
+- **Empty Groups**
+Deletes Groups that does not contain any mesh elements
+- **Delete All Groups**
+    * Deletes all groups in the Scene if **Display all scene Groups** option **is set**
+    * Deletes all groups in the Selected Objects if **Display all scene Groups** option **is unset**
+
+
+### Main panel Popup Menu
+![popup](img/screen/n_panel/popup.png)
+#### Select all objects by Group ID
+#### Batch rename Groups
 
 ### Selection to group
 #### Append
@@ -73,8 +132,10 @@ Selects Group Elements intersected with mesh selection
 
 #### Smart select
 Depends on selected mesh elements and has the next behaviour:
+
 - **Select Group by selected Elements in Viewport**
 If mesh selection belongs to Zen Sets group, all group elements are selected and other elements are deselected
+
 - **Deselect Active Group and select Elements that does not belong to any group**
 If mesh selection does not belong to any Zen Sets group, the active group is deselected and all mesh elements that don't have group metainformation are selected
 
@@ -83,20 +144,21 @@ If mesh selection does not belong to any Zen Sets group, the active group is des
 ### Display group
 You can highlight the active group in [Sets mode](npanel.md#sets-mode) or all groups in [Parts mode](npanel.md#parts-mode). Also you can hide, unhide active group or hide elements that don't belong to the active group
 
-![group_hide_unhide](img/screen/n_panel/group_hide_unhide.gif)
+![group_hide_unhide](img/screen/n_panel/group_highlight.gif)
 #### Hide
 Hides active group
 #### Unhide 
 Unhides active group
-#### Invert hide
+#### Isolate
 Hides elements that don't belong to active group
 #### Display
 Toggles the display of the active group in [Sets Mode](npanel.md#sets-mode) or all groups in [Parts Mode](npanel.md#parts-mode)
 
-![group_highlight](img/screen/n_panel/group_highlight.gif)
+## [Import-Export Subpanel](imp_exp.md)
+![imp_exp](img/screen/n_panel/n_panel_imp_exp.png)
 
-## Tools Subpanel
+## [Tools Subpanel](tools.md)
 ![tools](img/screen/n_panel/tools.png)
 
-## [Help](help.md) Subpanel
-![](img/screen/help.png)
+## [Help Subpanel](help.md)
+![help](img/screen/help.png)

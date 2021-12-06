@@ -1,4 +1,4 @@
-# Zen Sets for Blender 1.0
+# Zen Sets for Blender 1.1
 
 <!-- ![IntroSets](img/IntroSets.png) -->
 <!-- blank line -->
@@ -47,4 +47,6 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 - **Possibility to use Zen Sets Groups by external operators**. Implement Zen Sets for your own pipelines.
 
 ## Default Shortcuts
-- Zen Sets Pie Menu --- `Ctrl + Shift + D`
+You may override or disable every Zen Sets hotkey in addon preferences Keymap section
+
+![shortcuts](img/screen/preferences/shortcuts.png)

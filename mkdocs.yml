@@ -1,21 +1,11 @@
-site_name: Zen Sets for Blender
-site_description: Zen Sets for Blender Documentation
+site_name: Zen Sets 1.1 for Blender
+site_description: Zen Sets 1.1 for Blender Documentation
 nav:
     - Introduction: index.md
     - Installation: installation.md
     - N-Panel: npanel.md
-    # - Pie Menu: pie-menu.md
-    # - Advanced UV Maps: adv_uv-maps.md
-    # - Seam Groups: seam_groups.md
-    # - Operators: operators.md
-    # - Unwrap: unwrap.md
-    # - Select: select.md
-    # - Pack: pack.md
-    # - Checker Map: checker.md
-    # - Controls: controls.md
-    # - Texel Density: texel_density.md
-    # - Transform: transform.md
-    # - Stack: stack.md
+    - Import-Export: imp_exp.md
+    - Tools: tools.md
     - Preferences: preferences.md
     - Help: help.md
     - Downloads: downloads.md
