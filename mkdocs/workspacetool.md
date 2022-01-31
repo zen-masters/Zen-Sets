@@ -23,3 +23,7 @@ Press **`CTRL+SHIFT`** then **`click and drag`** outside of the mesh.
 4. Invert this selection: press **`CTRL+SHIFT`** then **`click and drag`** outside the model
 
 ![select_more_than_one_group](img/screen/workspacetool/select_more_than_one_group.gif)
+
+## Object Mode
+### Collection Toolbar
+![collections_bar](img/screen/workspacetool/collections_bar.gif)

@@ -14,3 +14,5 @@ Zen Sets preferences may be changed by the next options:
 You may override or disable every Zen Sets hotkey in addon preferences Keymap section
 
 ![shortcuts](img/screen/preferences/shortcuts.png)
+
+![shortcuts](img/screen/preferences/shortcuts_2.png)

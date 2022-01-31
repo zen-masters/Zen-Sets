@@ -1,4 +1,4 @@
-# Zen Sets for Blender 1.1
+# Zen Sets for Blender 1.2
 
 <!-- ![IntroSets](img/IntroSets.png) -->
 <!-- blank line -->
@@ -15,7 +15,13 @@
 <!-- blank line -->
 <br/>
 
-**Zen Sets** allow you to organize the mesh with visual grouping information. The mesh is only marked with metainformation and is still one contiguous surface. It is another way to control visibility state of the mesh in Blender Edit Mode
+**Zen Sets** adds new functionality to:
+
+- **Edit Mesh Mode** - it allows you to organize the mesh with visual grouping information. The mesh is only marked with metainformation and is still one contiguous surface. It is another way to control visibility state of the mesh in Blender Edit Mode
+
+- **Object Mode** - it adds new functionality for the management of collections via a Pie Menu, Viewport Tool in the 3D Viewport. It also offers visual grouping information.
+
+# Edit Mesh Mode
 
 ## Modes
 ![Modes](img/screen/modes.png)
@@ -34,6 +40,8 @@ One element (Vertex, Edge, Face) may belong only to one group and all groups or 
 
 Geometry can be assigned to a vertex, edge or face group and each group is represented as a different color in the 3D Viewport
 
+# Object Mode
+![obj_intro](img/screen/collections/intro.gif)
 
 **Enjoy this experience with us!**
 
@@ -58,3 +66,5 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 You may override or disable every Zen Sets hotkey in addon preferences Keymap section
 
 ![shortcuts](img/screen/preferences/shortcuts.png)
+
+![shortcuts](img/screen/preferences/shortcuts_2.png)

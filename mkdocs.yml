@@ -1,5 +1,5 @@
-site_name: Zen Sets 1.1 for Blender
-site_description: Zen Sets 1.1 for Blender Documentation
+site_name: Zen Sets 1.2 for Blender
+site_description: Zen Sets 1.2 for Blender Documentation
 nav:
     - Introduction: index.md
     - Installation: installation.md

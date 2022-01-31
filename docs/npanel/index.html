@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>N-Panel - Zen Sets 1.1 for Blender</title>
+  <title>N-Panel - Zen Sets 1.2 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen Sets 1.1 for Blender</a>
+        <a href=".." class="icon icon-home"> Zen Sets 1.2 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -129,6 +129,14 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#palette-panel">Palette Panel</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#auto-mode">Auto Mode</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#user-palette-mode">User Palette Mode</a>
+    </li>
+        </ul>
+    </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#import-export-subpanel">Import-Export Subpanel</a>
@@ -181,7 +189,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen Sets 1.1 for Blender</a>
+        <a href="..">Zen Sets 1.2 for Blender</a>
       </nav>
 
       
@@ -209,7 +217,7 @@
 <p>N-Panel contains all Zen Sets addon functionality and consits of <a href="#main-subpanel">Main</a>, <a href="../imp_exp/">Import-Export</a>, <a href="../tools/">Tools</a>, <a href="../preferences/">Preferences</a> and <a href="../help/">Help</a> collapsible subpanels.</p>
 <div class="admonition notice">
 <p class="admonition-title">Notice</p>
-<p><strong>This panel is available only in edit mode, when the object is being edited as a mesh</strong></p>
+<p><strong>This panel is available only in Blender Edit Mode and Object Mode</strong></p>
 </div>
 <p><img alt="npanel" src="../img/screen/n_panel/n_panel_preview.gif" />    </p>
 <hr />
@@ -366,6 +374,18 @@ If mesh selection does not belong to any Zen Sets group, the active group is des
 <p>Hides elements that don&rsquo;t belong to active group</p>
 <h4 id="display">Display</h4>
 <p>Toggles the display of the active group in <a href="./#sets-mode">Sets Mode</a> or all groups in <a href="./#parts-mode">Parts Mode</a></p>
+<h3 id="palette-panel">Palette Panel</h3>
+<p>Gives an option to adjust user colors when a new color is generated for new group</p>
+<p><img alt="pal_auto" src="../img/screen/n_panel/palette/pal_auto.png" /></p>
+<h4 id="auto-mode">Auto Mode</h4>
+<p>Colors are created in random order of Zen Sets default palette</p>
+<h4 id="user-palette-mode">User Palette Mode</h4>
+<p>Colors are selected from user palette</p>
+<ul>
+<li><strong>Sequence Mode</strong></li>
+<li><strong>Random Mode</strong></li>
+</ul>
+<p><img alt="pal_user" src="../img/screen/n_panel/palette/pal_user.png" /></p>
 <hr />
 <h2 id="import-export-subpanel"><a href="../imp_exp/">Import-Export Subpanel</a></h2>
 <p><img alt="imp_exp" src="../img/screen/n_panel/n_panel_imp_exp.png" /></p>

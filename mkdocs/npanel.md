@@ -2,7 +2,7 @@
 N-Panel contains all Zen Sets addon functionality and consits of [Main](#main-subpanel), [Import-Export](imp_exp.md), [Tools](tools.md), [Preferences](preferences.md) and [Help](help.md) collapsible subpanels.
 
 !!! Notice
-    **This panel is available only in edit mode, when the object is being edited as a mesh**
+    **This panel is available only in Blender Edit Mode and Object Mode**
 
 ![npanel](img/screen/n_panel/n_panel_preview.gif)    
 
@@ -172,6 +172,22 @@ Unhides active group
 Hides elements that don't belong to active group
 #### Display
 Toggles the display of the active group in [Sets Mode](npanel.md#sets-mode) or all groups in [Parts Mode](npanel.md#parts-mode)
+
+### Palette Panel
+Gives an option to adjust user colors when a new color is generated for new group
+
+![pal_auto](img/screen/n_panel/palette/pal_auto.png)
+#### Auto Mode
+Colors are created in random order of Zen Sets default palette
+
+#### User Palette Mode
+Colors are selected from user palette
+
+- **Sequence Mode**
+- **Random Mode**
+
+![pal_user](img/screen/n_panel/palette/pal_user.png)
+
 
 ---
 
