@@ -169,7 +169,7 @@ Hides active group
 #### Unhide 
 Unhides active group
 #### Isolate
-Hides elements that don't belong to active group
+Hides elements that don't belong to active group or restore (unhide) all elements if the group was previously isolated
 #### Display
 Toggles the display of the active group in [Sets Mode](npanel.md#sets-mode) or all groups in [Parts Mode](npanel.md#parts-mode)
 

@@ -1,5 +1,41 @@
 # Changelog
 
+## 1.2.0
+### New:
+
+#### 1. Functionality for the management of collections
+##### 1.1. Display System
+- Boundbox of the Selected Collection in the Viewport
+- Highlight Objects in Collections
+- Get the list of colorized Selected Objects
+##### 1.2. Pie Menu
+Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.:
+- Duplicate collection (Linked, Instanced)
+- Exclude-include collection
+##### 1.3. WorkSpace Tool
+- Quick collection toolbar with the options to append-remove object, toggle hide, select, exclude, disable
+- Mouse operations to isolate, unhide, invert object selection
+##### 1.4. Tools
+- Batch rename Collections
+- Convert collections to nested objects and back
+
+#### 2. Palette
+- Create-delete user Palette
+- Reorder the Palette colors (operators of moving up/down one position)
+- Sort Colors by Hue, Saturation, Value, Luminance
+- Export Group colors to the Active Palette
+- Assign color from the Active Palette in sequence or random order
+
+### Enhancement:
+1. Isolate-restore functionality in eye-icon
+2. Option to switch off select after unhide, isolate operations
+3. Better Zen Sets tool arrangement in N-Panel Tool tab and Sidebar Tool tab
+4. Removed viewport shading from Zen Sets Groups color icons, so icons now have true color
+
+### Fix:
+1. Fixed error after Auto Groups undo operation
+2. Fixed performance drop if Preferences panel was expanded
+
 ---
 ## 1.1.0
 ### New:

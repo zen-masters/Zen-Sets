@@ -89,13 +89,29 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Changelog</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#110">1.1.0</a>
+    <li class="toctree-l2"><a class="reference internal" href="#120">1.2.0</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new">New:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-functionality-for-the-management-of-collections">1. Functionality for the management of collections</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-palette">2. Palette</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#enhancement">Enhancement:</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#fix">Fix:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#110">1.1.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new_1">New:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_1">Enhancement:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_1">Fix:</a>
     </li>
         </ul>
     </li>
@@ -138,9 +154,52 @@
             <div class="section">
               
                 <h1 id="changelog">Changelog</h1>
+<h2 id="120">1.2.0</h2>
+<h3 id="new">New:</h3>
+<h4 id="1-functionality-for-the-management-of-collections">1. Functionality for the management of collections</h4>
+<h5 id="11-display-system">1.1. Display System</h5>
+<ul>
+<li>Boundbox of the Selected Collection in the Viewport</li>
+<li>Highlight Objects in Collections</li>
+<li>Get the list of colorized Selected Objects</li>
+</ul>
+<h5 id="12-pie-menu">1.2. Pie Menu</h5>
+<p>Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.:
+- Duplicate collection (Linked, Instanced)
+- Exclude-include collection</p>
+<h5 id="13-workspace-tool">1.3. WorkSpace Tool</h5>
+<ul>
+<li>Quick collection toolbar with the options to append-remove object, toggle hide, select, exclude, disable</li>
+<li>Mouse operations to isolate, unhide, invert object selection</li>
+</ul>
+<h5 id="14-tools">1.4. Tools</h5>
+<ul>
+<li>Batch rename Collections</li>
+<li>Convert collections to nested objects and back</li>
+</ul>
+<h4 id="2-palette">2. Palette</h4>
+<ul>
+<li>Create-delete user Palette</li>
+<li>Reorder the Palette colors (operators of moving up/down one position)</li>
+<li>Sort Colors by Hue, Saturation, Value, Luminance</li>
+<li>Export Group colors to the Active Palette</li>
+<li>Assign color from the Active Palette in sequence or random order</li>
+</ul>
+<h3 id="enhancement">Enhancement:</h3>
+<ol>
+<li>Isolate-restore functionality in eye-icon</li>
+<li>Option to switch off select after unhide, isolate operations</li>
+<li>Better Zen Sets tool arrangement in N-Panel Tool tab and Sidebar Tool tab</li>
+<li>Removed viewport shading from Zen Sets Groups color icons, so icons now have true color</li>
+</ol>
+<h3 id="fix">Fix:</h3>
+<ol>
+<li>Fixed error after Auto Groups undo operation</li>
+<li>Fixed performance drop if Preferences panel was expanded</li>
+</ol>
 <hr />
 <h2 id="110">1.1.0</h2>
-<h3 id="new">New:</h3>
+<h3 id="new_1">New:</h3>
 <ol>
 <li>N-Panel Toolbar:</li>
 <li>Display Toggle</li>
@@ -158,7 +217,7 @@
 <li>Option to Batch rename Groups</li>
 <li>Auto Groups delimiters: Normal, Material, Seam, Sharp, UVs</li>
 </ol>
-<h3 id="enhancement">Enhancement:</h3>
+<h3 id="enhancement_1">Enhancement:</h3>
 <ol>
 <li>Improved N-Panel interface performance with huge amount of groups (100 and more)</li>
 <li>Avoiding of empty Groups creation in multi-object mode (Add, Append operators)</li>
@@ -168,7 +227,7 @@
 <li>Multi-object groups represention (ability to see only groups in selected objects or in all Scene)</li>
 <li>Inherit only necessary groups in &lsquo;Create Objects from groups&rsquo; operator instead of all Scene groups</li>
 </ol>
-<h3 id="fix">Fix:</h3>
+<h3 id="fix_1">Fix:</h3>
 <ol>
 <li>Faces overlay Z-Fight if mesh has transformations</li>
 <li>Edges overlay Z-Fight in all modes</li>
