@@ -28,26 +28,26 @@
 
 - **Object Mode** - it adds new functionality for the management of collections via a Pie Menu, Viewport Tool in the 3D Viewport. It also offers visual grouping information.
 
-# Edit Mesh Mode
+## Edit Mesh Mode
 
-## Modes
+### Modes
 ![Modes](img/screen/modes.png)
-### Sets mode
+#### Sets mode
 One element (Vertex, Edge, Face) may be assigned to more than one group and only active group is displayed in the viewport
 
 ![sets_mode](img/screen/sets_mode.gif)
 
-### Parts mode
+#### Parts mode
 One element (Vertex, Edge, Face) may belong only to one group and all groups or active group can be displayed in the viewport
 
 ![parts_mode](img/screen/parts_mode.gif)
 
-## Supported Elements
+### Supported Elements
 ![Elements](img/screen/elements.png)
 
 Geometry can be assigned to a vertex, edge or face group and each group is represented as a different color in the 3D Viewport
 
-# Object Mode
+## Object Mode
 ![obj_intro](img/screen/collections/intro.gif)
 
 **Enjoy this experience with us!**
@@ -57,7 +57,7 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 <!-- blank line -->
 ----
 <!-- blank line -->
-## Main Features
+### Main Features
 
 - [**Intuitive UI**](npanel.md) with multifunctional **[N-Panel](npanel.md), Pie menu and [Workspace Tool](workspacetool.md)**.
 - **Context-sensitive help** that is obtained from an every button in UI by pressing F1.
