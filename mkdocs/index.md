@@ -50,6 +50,11 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 ## Object Mode
 ![obj_intro](img/screen/collections/intro.gif)
 
+### Object Smart Select and New Group Demo
+The example demonstrates how to combine 2 collections by using New Group and Smart Select
+
+![collections_combine](img/screen/n_panel/collections_combine.gif)
+
 **Enjoy this experience with us!**
 
 ![Gumroad](img/icons/services/gumroad-16.png) [**Gumroad**](https://sergeytyapkin.gumroad.com/l/zensets) | ![BlenderMarket](img/icons/services/blendermarket-16.png) [**BlenderMarket**](https://www.blendermarket.com/products/zen-sets) | ![Discord](img/icons/services/discord-16.png) [**Discord**](https://discord.gg/wGpFeME)
@@ -57,7 +62,7 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 <!-- blank line -->
 ----
 <!-- blank line -->
-### Main Features
+## Main Features
 
 - [**Intuitive UI**](npanel.md) with multifunctional **[N-Panel](npanel.md), Pie menu and [Workspace Tool](workspacetool.md)**.
 - **Context-sensitive help** that is obtained from an every button in UI by pressing F1.

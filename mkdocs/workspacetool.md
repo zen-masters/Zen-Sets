@@ -26,4 +26,19 @@ Press **`CTRL+SHIFT`** then **`click and drag`** outside of the mesh.
 
 ## Object Mode
 ### Collection Toolbar
+- Quick collection toolbar with the options to append-remove object, toggle hide, select, exclude, disable
+
+- Mouse operations to isolate, unhide, invert object selection
+
 ![collections_bar](img/screen/workspacetool/collections_bar.gif)
+
+### Collection Selector
+#### Next Collection - **`Ctrl + Mouse Wheel`**
+Changes active Collection to the next in the list of all Collections and starts from the first when reaches the end.
+
+![collections_next](img/screen/workspacetool/collections_next.gif)
+
+#### Next Selected Object Collection - **`Ctrl + Shift + Mouse Wheel`**
+Changes active Collection to the next in the list of all Selected Object Collections and starts from the first when reaches the end.
+
+![collection_sel_obj_next](img/screen/workspacetool/collection_sel_obj_next.gif)
