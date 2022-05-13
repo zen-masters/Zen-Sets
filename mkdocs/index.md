@@ -1,5 +1,7 @@
 # Zen Sets for Blender 1.2
 
+![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
+
 <!-- ![IntroSets](img/IntroSets.png) -->
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
