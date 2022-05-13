@@ -1,5 +1,7 @@
 # Zen Sets for Blender 1.2
 
+![stand_with_Ukraine](mkdocs/img/I_stand_with_Ukraine_banner.svg)
+
 **Zen Sets** adds new functionality to:
 
 - **Edit Mesh Mode** - it allows you to organize the mesh with visual grouping information. The mesh is only marked with metainformation and is still one contiguous surface. It is another way to control visibility state of the mesh in Blender Edit Mode
