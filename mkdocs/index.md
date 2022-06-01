@@ -1,4 +1,4 @@
-# Zen Sets for Blender 1.2
+# Zen Sets for Blender 1.3
 
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 
@@ -28,6 +28,8 @@
 
 - **Edit Mesh Mode** - it allows you to organize the mesh with visual grouping information. The mesh is only marked with metainformation and is still one contiguous surface. It is another way to control visibility state of the mesh in Blender Edit Mode
 
+- **UV Editing Mode** - it allows to control mesh groups in UV Editor
+
 - **Object Mode** - it adds new functionality for the management of collections via a Pie Menu, Viewport Tool in the 3D Viewport. It also offers visual grouping information.
 
 ## Edit Mesh Mode
@@ -48,6 +50,9 @@ One element (Vertex, Edge, Face) may belong only to one group and all groups or 
 ![Elements](img/screen/elements.png)
 
 Geometry can be assigned to a vertex, edge or face group and each group is represented as a different color in the 3D Viewport
+
+## UV Editing Mode
+![uv_intro](img/screen/uv/uv_submode.gif)
 
 ## Object Mode
 ![obj_intro](img/screen/collections/intro.gif)
