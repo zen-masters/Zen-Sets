@@ -197,6 +197,8 @@ Colors are selected from user palette
 
 ![pal_user](img/screen/n_panel/palette/pal_user.png)
 
+##### Example how to download and use custom palette
+![download_palette](img/screen/n_panel/palette/custom_palettes.gif)
 
 ---
 
