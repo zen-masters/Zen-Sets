@@ -1,5 +1,38 @@
 # Changelog
 
+## 1.3.0
+### New:
+
+#### 1. UV Support for Zen Sets
+##### 1.1. Display System
+- Highlight Zen Sets groups in UV Editor
+- Option to show groups in UV Editor in UV Non Sync mode when mesh is not selected
+##### 1.2. Pie Menu
+Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.:
+- Convert Collection to Parent Object and back
+- Pie menu assist
+##### 1.3. WorkSpace Tool
+- Help menu F1
+- Tool Smart Select - Ctrl + Right (Clear Selection), Shift + Right (Keep active group)
+- Assign to Pinned group
+##### 1.4. Tools
+- Assign UV Borders
+- Auto Groups by Custom Operators
+- Tool operations in UV Editor: Smart Select, Select Group, Invert UV Selection
+##### 1.5. N-Panel
+- Object Mode filter options: Selected Parents, Selected Collections, Selected Objects
+- UV Operations: Select, Append, Intersect, Remove
+
+### Enhancement:
+1. Display system detect grab and drag operations
+2. Indicator if Object Collection is isolated
+3. Convert Collection to Parent Object with storing of Pivots by calculated collections center
+4. Display Object Pivot state: Transform Origins, Locals, Parents
+5. Sticky 2D label
+
+### Fix:
+1. Fixed UI List Drag indicator bug
+
 ## 1.2.0
 ### New:
 

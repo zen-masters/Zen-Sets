@@ -164,6 +164,15 @@ If mesh selection does not belong to any Zen Sets group, the active group is des
 You can highlight the active group in [Sets mode](npanel.md#sets-mode) or all groups in [Parts mode](npanel.md#parts-mode). Also you can hide, unhide active group or hide elements that don't belong to the active group
 
 ![group_hide_unhide](img/screen/n_panel/group_highlight.gif)
+
+#### UV Editor Display Options
+
+![uv_vis_only](img/screen/n_panel/uv_visible_only.gif)
+
+#### Display modified mesh
+
+![mod_mesh](img/screen/n_panel/modified_object.gif)
+
 #### Hide
 Hides active group
 #### Unhide 

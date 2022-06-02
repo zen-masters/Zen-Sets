@@ -6,6 +6,9 @@
 ### Auto Groups
 ![auto_groups](img/screen/tools/auto_groups.gif)
 
+### Auto Groups by custom operator
+![auto_custom](img/screen/tools/auto_groups_with_custom.gif)
+
 ### Create Objects from Groups
 ![create_objects](img/screen/tools/create_objects.gif)
 
@@ -18,6 +21,18 @@
 ### Mark and clear seams
 The menu options marks or clear seams in the Selected Group
 ![mark_seams](img/screen/tools/mark_seams.gif)
+
+### Assign to Pinned Group
+!!! Notice
+    **This option is available only in Sets Mode**
+
+![to_pinned](img/screen/tools/assign_to_pinned.gif)
+
+### Assign UV Borders To Group
+!!! Notice
+    **This option is available only in Edge Sets Mode**
+
+![to_uv_borders](img/screen/tools/assign_uv_borders.gif)
 
 ## Object Tools
 
