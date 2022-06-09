@@ -161,7 +161,14 @@ If mesh selection does not belong to any Zen Sets group, the active group is des
 ---
 
 ### Display group
-You can highlight the active group in [Sets mode](npanel.md#sets-mode) or all groups in [Parts mode](npanel.md#parts-mode). Also you can hide, unhide active group or hide elements that don't belong to the active group
+#### Hide
+Hides active group
+#### Unhide 
+Unhides active group
+#### Isolate
+Hides elements that don't belong to active group or restore (unhide) all elements if the group was previously isolated
+#### Display
+Toggles the display of the active group in [Sets mode](npanel.md#sets-mode) or all groups in [Parts mode](npanel.md#parts-mode). Also you can hide, unhide active group or hide elements that don't belong to the active group
 
 ![group_hide_unhide](img/screen/n_panel/group_highlight.gif)
 
@@ -173,14 +180,6 @@ You can highlight the active group in [Sets mode](npanel.md#sets-mode) or all gr
 
 ![mod_mesh](img/screen/n_panel/modified_object.gif)
 
-#### Hide
-Hides active group
-#### Unhide 
-Unhides active group
-#### Isolate
-Hides elements that don't belong to active group or restore (unhide) all elements if the group was previously isolated
-#### Display
-Toggles the display of the active group in [Sets Mode](npanel.md#sets-mode) or all groups in [Parts Mode](npanel.md#parts-mode)
 
 ### Palette Panel
 Gives an option to adjust user colors when a new color is generated for new group
@@ -196,6 +195,10 @@ Colors are selected from user palette
 - **Random Mode**
 
 ![pal_user](img/screen/n_panel/palette/pal_user.png)
+
+#### Assign Color from Palette
+
+![pal_assign](img/screen/n_panel/palette/palette_assign_to_group.gif)
 
 ##### Example how to download and use custom palette
 ![download_palette](img/screen/n_panel/palette/custom_palettes.gif)
