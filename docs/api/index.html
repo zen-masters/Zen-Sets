@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>API - Zen Sets 1.3.3 for Blender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "API";
+        var mkdocs_page_input_path = "api.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Zen Sets 1.3.3 for Blender
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npanel/">N-Panel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../workspacetool/">View3D Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../imp_exp/">Import-Export</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">API</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#scene-properties">Scene Properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#operators">Operators</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Zen Sets 1.3.3 for Blender</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>API</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="zen-sets-api">Zen Sets API<a class="headerlink" href="#zen-sets-api" title="Permanent link"></a></h1>
+<p>We offer to use our API for addon creators and other users to highlight differents parts of Mesh elements (verts, edges, faces) or UV loops</p>
+<div class="admonition example">
+<p class="admonition-title">ZenSets/API/example_create_groups.py</p>
+<p><img alt="api_example" src="../img/screen/api/api_create_groups.gif" /></p>
+<details class="note">
+<summary>Source Code</summary>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">bpy</span>
+<span class="kn">import</span> <span class="nn">bmesh</span>
+
+
+<span class="k">class</span> <span class="nc">DemoNames</span><span class="p">:</span>
+<span class="n">group_even</span> <span class="o">=</span> <span class="s1">&#39;Example - Even&#39;</span>
+<span class="n">group_odd</span> <span class="o">=</span> <span class="s1">&#39;Example - Odd&#39;</span>
+
+
+<span class="k">def</span> <span class="nf">api_demo_create_groups</span><span class="p">():</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span>
+
+<span class="k">if</span> <span class="n">C</span><span class="o">.</span><span class="n">mode</span> <span class="o">!=</span> <span class="s1">&#39;OBJECT&#39;</span><span class="p">:</span>
+    <span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;OBJECT&#39;</span><span class="p">)</span>
+
+<span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">mesh</span><span class="o">.</span><span class="n">primitive_cube_add</span><span class="p">(</span><span class="n">enter_editmode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="n">p_obj</span> <span class="o">=</span> <span class="n">C</span><span class="o">.</span><span class="n">active_object</span>
+
+<span class="n">p_scene</span> <span class="o">=</span> <span class="n">C</span><span class="o">.</span><span class="n">scene</span>
+<span class="c1"># set &#39;Face Parts&#39; mode</span>
+<span class="n">p_scene</span><span class="o">.</span><span class="n">zen_sets_active_mode</span> <span class="o">=</span> <span class="s1">&#39;face_u&#39;</span>
+
+<span class="c1"># create 1 group with object even faces (0, 2, 4 ...)</span>
+<span class="n">bm</span> <span class="o">=</span> <span class="n">bmesh</span><span class="o">.</span><span class="n">from_edit_mesh</span><span class="p">(</span><span class="n">p_obj</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">bm</span><span class="o">.</span><span class="n">faces</span><span class="p">:</span>
+    <span class="n">face</span><span class="o">.</span><span class="n">select_set</span><span class="p">(</span><span class="n">face</span><span class="o">.</span><span class="n">index</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">zsts</span><span class="o">.</span><span class="n">assign_to_group</span><span class="p">(</span>
+    <span class="n">group_name</span><span class="o">=</span><span class="n">DemoNames</span><span class="o">.</span><span class="n">group_even</span><span class="p">,</span> <span class="n">group_color</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="c1"># create 2 group with object odd faces (1, 3, 5 ...)</span>
+<span class="n">bm</span> <span class="o">=</span> <span class="n">bmesh</span><span class="o">.</span><span class="n">from_edit_mesh</span><span class="p">(</span><span class="n">p_obj</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">bm</span><span class="o">.</span><span class="n">faces</span><span class="p">:</span>
+    <span class="n">face</span><span class="o">.</span><span class="n">select_set</span><span class="p">(</span><span class="n">face</span><span class="o">.</span><span class="n">index</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">zsts</span><span class="o">.</span><span class="n">assign_to_group</span><span class="p">(</span>
+    <span class="n">group_name</span><span class="o">=</span><span class="n">DemoNames</span><span class="o">.</span><span class="n">group_odd</span><span class="p">,</span> <span class="n">group_color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+
+<span class="c1"># DEMO</span>
+<span class="n">api_demo_create_groups</span><span class="p">()</span>
+</code></pre></div>
+</details>
+</div>
+<h2 id="scene-properties">Scene Properties<a class="headerlink" href="#scene-properties" title="Permanent link"></a></h2>
+<dl class="py class">
+    <dt class="sig sig-object py" id="zen_sets_active_mode">
+        <em class="property"><span class="pre">enum</span></em>
+        <span class="sig-prename descclassname"><span class="pre">bpy.types.Scene.zen_sets_active_mode</span></span>
+        <a class="headerlink" href="#zen_sets_active_mode" title="Permalink link"></a>
+    </dt>
+</dl>
+
+<blockquote>
+<ul>
+<li><code>vert</code> - Vertex Sets</li>
+<li><code>vert_u</code> - Vertex Parts</li>
+<li><code>edge</code> - Edge Sets</li>
+<li><code>edge_u</code> - Edge Parts</li>
+<li><code>face</code> - Face Sets</li>
+<li><code>face_u</code> - Face Parts<blockquote>
+<p><strong>Type:</strong> enum in {<code>vert</code>, <code>vert_u</code>, <code>edge</code>, <code>edge_u</code>, <code>face</code>, <code>face_u</code>}</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link"></a></h2>
+<dl class="py class">
+    <dt class="sig sig-object py" id="zsts.assign_to_group">
+        <!-- <em class="property"><span class="pre">operator</span></em> -->
+        <span class="sig-prename descclassname"><span class="pre">bpy.ops.</span></span>
+        <span class="sig-name descname"><span class="pre">zsts.assign_to_group</span></span>
+        <span class="sig-paren">(</span>
+        <em class="sig-param"><span class="n"><span class="pre">identifier=""</span></span></em>, 
+        <em class="sig-param"><span class="n"><span class="pre">group_name=""</span></span></em>, 
+        <em class="sig-param"><span class="n"><span class="pre">group_color=(0, 0, 0)</span></span></em>, 
+        <em class="sig-param"><span class="n"><span class="pre">group_indices=[]</span></span></em>, 
+        <em class="sig-param"><span class="n"><span class="pre">group_mode='SELECTED'</span></span></em> 
+        <span class="sig-paren">)</span>
+        <a class="headerlink" href="#zsts.assign_to_group" title="Permalink link"></a>
+    </dt>
+</dl>
+
+<blockquote>
+<p>Assign Mesh Elements (Verts, Edges, Faces) to Group, deleting any existing assignments</p>
+<p><strong>Parameters:</strong></p>
+<blockquote>
+<blockquote>
+<ul>
+<li><strong>identifier</strong> (<em>str</em>, (<em>optional</em>)) - Unique identifier of the Group.</li>
+<li><strong>group_name</strong> (<em>str</em>, (<em>optional</em>)) - Group Name.</li>
+<li><strong>group_color</strong> (<em>Color</em>, (<em>optional</em>)) - Group Color.</li>
+<li><strong>group_indices</strong> (<em>Collection</em>, (<em>optional</em>)) - Collection of Group Indices.</li>
+<li><strong>group_mode</strong> (<em>enum</em> in <em>{&lsquo;SELECTED&rsquo;, &lsquo;INDICES&rsquo;}</em>, (<em>optional</em>)) - Assign Group Mode.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">bpy</span>
+<span class="c1"># create 1 group with object even faces (0, 2, 4 ...)</span>
+<span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">zsts</span><span class="o">.</span><span class="n">assign_to_group</span><span class="p">(</span>
+    <span class="n">group_mode</span><span class="o">=</span><span class="s1">&#39;INDICES&#39;</span><span class="p">,</span>
+    <span class="n">group_indices</span><span class="o">=</span><span class="nb">tuple</span><span class="p">(</span>
+        <span class="p">{</span><span class="s1">&#39;item&#39;</span><span class="p">:</span> <span class="n">face</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">p_obj</span><span class="o">.</span><span class="n">name</span><span class="p">}</span>
+        <span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">bm</span><span class="o">.</span><span class="n">faces</span> <span class="k">if</span> <span class="n">face</span><span class="o">.</span><span class="n">index</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="n">group_name</span><span class="o">=</span><span class="s1">&#39;Example - Even&#39;</span><span class="p">,</span> <span class="n">group_color</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</code></pre></div>
+</blockquote>
+</blockquote>
+</blockquote>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../changelog/" class="btn btn-neutral float-left" title="Changelog"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../changelog/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

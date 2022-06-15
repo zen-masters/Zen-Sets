@@ -1,5 +1,5 @@
-site_name: Zen Sets 1.3 for Blender
-site_description: Zen Sets 1.3 for Blender Documentation
+site_name: Zen Sets 1.3.3 for Blender
+site_description: Zen Sets 1.3.3 for Blender Documentation
 nav:
     - Introduction: index.md
     - Installation: installation.md
@@ -12,9 +12,16 @@ nav:
     - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md
     - Changelog: changelog.md
+    - API: api.md
+
 docs_dir: mkdocs
 site_dir: docs
 theme: readthedocs
+
 markdown_extensions:
     - smarty
     - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - toc:
+        permalink: 

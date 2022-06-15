@@ -1,69 +1,63 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Import-Export - Zen Sets 1.3 for Blender</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Import-Export";
-    var mkdocs_page_input_path = "imp_exp.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Import-Export - Zen Sets 1.3.3 for Blender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Import-Export";
+        var mkdocs_page_input_path = "imp_exp.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen Sets 1.3 for Blender</a>
-        <div role="search">
+          <a href=".." class="icon icon-home"> Zen Sets 1.3.3 for Blender
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../npanel/">N-Panel</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../workspacetool/">View3D Tool</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Import-Export</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npanel/">N-Panel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../workspacetool/">View3D Tool</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Import-Export</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#copy-to-clipboard">Copy to Clipboard</a>
     </li>
@@ -76,77 +70,71 @@
     <li class="toctree-l2"><a class="reference internal" href="#import-export-blender-face-maps">Import-export Blender Face Maps</a>
     </li>
     </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
-                    </li>
-                </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../api/">API</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen Sets 1.3 for Blender</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Zen Sets 1.3.3 for Blender</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Import-Export</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Import-Export</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
 
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
-                <h1 id="import-export">Import-Export</h1>
+                <h1 id="import-export">Import-Export<a class="headerlink" href="#import-export" title="Permanent link"></a></h1>
 <p><img alt="n_panel_imp_exp" src="../img/screen/n_panel/n_panel_imp_exp.png" /></p>
-<h2 id="copy-to-clipboard">Copy to Clipboard</h2>
+<h2 id="copy-to-clipboard">Copy to Clipboard<a class="headerlink" href="#copy-to-clipboard" title="Permanent link"></a></h2>
 <p>Copies Groups data to Clipboard in JSON format</p>
-<h2 id="paste-from-clipboard">Paste from Clipboard</h2>
+<h2 id="paste-from-clipboard">Paste from Clipboard<a class="headerlink" href="#paste-from-clipboard" title="Permanent link"></a></h2>
 <p>Pastes Groups data from Clipboard and applies to the objects in the Edit Mode</p>
 <p><img alt="copy_paste_rename" src="../img/screen/n_panel/copy_paste_rename.gif" /></p>
 <div class="admonition notice">
 <p class="admonition-title">Notice</p>
 <p><strong>Copy-Paste operation is available only for the same objects</strong></p>
 </div>
-<h2 id="import-export-blender-vertex-colors">Import-export Blender Vertex Colors</h2>
+<h2 id="import-export-blender-vertex-colors">Import-export Blender Vertex Colors<a class="headerlink" href="#import-export-blender-vertex-colors" title="Permanent link"></a></h2>
 <p>Available in all Zen Sets modes</p>
 <p><img alt="export_vertex_colors" src="../img/screen/imp_exp/export_vertex_colors.png" /></p>
 <ul>
@@ -167,37 +155,29 @@ Creates new Vertex Color layer for every Zen Sets Group</p>
 <p class="admonition-title">Notice</p>
 <p><strong><a href="https://blender.stackexchange.com/questions/166257/are-vertex-color-layers-limited-to-8">Blender Vertex Color Layers count are limited to 8 !</a></strong></p>
 </div>
-<h2 id="import-export-blender-vertex-groups">Import-export Blender Vertex Groups</h2>
+<h2 id="import-export-blender-vertex-groups">Import-export Blender Vertex Groups<a class="headerlink" href="#import-export-blender-vertex-groups" title="Permanent link"></a></h2>
 <p>Available in Zen Sets Vert Sets, Vert Parts modes</p>
 <p><img alt="export_vertex_groups" src="../img/screen/imp_exp/export_vertex_groups.png" /></p>
-<h2 id="import-export-blender-face-maps">Import-export Blender Face Maps</h2>
+<h2 id="import-export-blender-face-maps">Import-export Blender Face Maps<a class="headerlink" href="#import-export-blender-face-maps" title="Permanent link"></a></h2>
 <p>Available in Zen Sets Face Sets, Face Parts modes</p>
 <p><img alt="export_face_maps" src="../img/screen/imp_exp/export_face_maps.png" /></p>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../workspacetool/" class="btn btn-neutral float-left" title="View3D Tool"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../tools/" class="btn btn-neutral float-right" title="Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../workspacetool/" class="btn btn-neutral" title="View3D Tool"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -205,7 +185,7 @@ Creates new Vertex Color layer for every Zen Sets Group</p>
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     

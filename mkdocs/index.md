@@ -1,8 +1,15 @@
-# Zen Sets for Blender 1.3
+# Zen Sets for Blender 1.3.3
 
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 
 <!-- ![IntroSets](img/IntroSets.png) -->
+<!-- blank line -->
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe width="1018" height="573" src="https://www.youtube.com/embed/alUumSA7fe4" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<!-- blank line -->
+<br/>
+
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 <iframe width="1018" height="573" src="https://www.youtube.com/embed/iI1JWrOn2ys" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
@@ -79,7 +86,7 @@ The example demonstrates how to combine 2 collections by using New Group and Sma
 - [**Auto Groups Operator**](tools.md#auto-groups) to create Groups automatically from linked faces.
 - [**Create Objects from Groups Operator**](tools.md#create-objects-from-groups). Divide mesh into Objects using Zen Sets Groups.
 - [**Assign Materials to Groups Operator**](tools.md#assign-materials-to-groups).
-- **Possibility to use Zen Sets Groups by external operators**. Implement Zen Sets for your own pipelines.
+- [**Possibility to use Zen Sets Groups by external operators**](api.md). Implement Zen Sets for your own pipelines.
 
 ## Default Shortcuts
 You may override or disable every Zen Sets hotkey in addon preferences Keymap section

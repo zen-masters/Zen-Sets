@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.3
+### Fix
+- Blender 3.2.0 support
+
 ## 1.3.0
 ### New:
 
