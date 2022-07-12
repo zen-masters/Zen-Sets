@@ -1,4 +1,4 @@
-# Zen Sets for Blender 1.3.3
+# Zen Sets for Blender 1.3.4
 
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 

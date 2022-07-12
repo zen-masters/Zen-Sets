@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.4
+### Fix
+1. Select option in Group Selector Tool
+
 ## 1.3.3
 ### Fix
 - Blender 3.2.0 support
