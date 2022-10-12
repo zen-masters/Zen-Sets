@@ -1,14 +1,66 @@
 # Changelog
 
-## 1.3.4
+---
+## Version 1.4.1
+### New:
+#### Tools:
+* Rename Objects as Collection operator.
+* Rename Collection as Object operator.
+
+### Fix:
+* Fixed Create Objects from Groups in Multi object mode.
+
+---
+## Version 1.4
+### New:
+
+#### 1. Simple Object Sets and Parts
+- Highlight Zen Sets Simple Object Sets and Parts
+- Integration to all Zen Sets instruments: UI List, Pie Menu, Tool, etc.
+- Option to import-export to-from Collections and between modes
+
+#### 2. Pie Menu
+- Smart Isolate
+- Select Ungroupped
+- Change Zen Sets Mode
+
+#### 3. N-Panel
+- Smart Isolate
+- Select Ungroupped
+
+#### 4. Tools
+##### 4.1. Assign Materials to Object Groups
+##### 4.2. Object Auto Groups:
+- By Object Type
+- By Object Linked Data
+- By Object Material
+- By Single Object in the Group
+- By Custom Delimiter (any Blender or third-party Select Object Operator)
+##### 4.3. Remove Objects with linked data from Groups
+Makes only unique objects in groups
+
+### Enhancement:
+1. Option to change Pie Assist Font Size
+2. Option to switch off Collection BoundBox
+3. Option to switch off Auto Update Draw Cache
+
+### Fix:
+1. Fixed Pie Menu Smart Select renames Collections
+2. Fixed Draw is not working in Blender 3.3
+3. Fixed Append with Move Objects deactivated doesn't link objects
+
+---
+## Version 1.3.4
 ### Fix
 1. Select option in Group Selector Tool
 
-## 1.3.3
+---
+## Version 1.3.3
 ### Fix
 - Blender 3.2.0 support
 
-## 1.3.0
+---
+## Version 1.3.0
 ### New:
 
 #### 1. UV Support for Zen Sets
@@ -41,7 +93,8 @@ Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.
 ### Fix:
 1. Fixed UI List Drag indicator bug
 
-## 1.2.0
+---
+## Version 1.2.0
 ### New:
 
 #### 1. Functionality for the management of collections
@@ -78,7 +131,7 @@ Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.
 2. Fixed performance drop if Preferences panel was expanded
 
 ---
-## 1.1.0
+## Version 1.1.0
 ### New:
 1. N-Panel Toolbar:
 - Display Toggle
@@ -113,5 +166,5 @@ Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.
 5. Global object cleanup to avoid undeleted group layers
 
 ---
-## 1.0.0
+## Version 1.0.0
 - First Release!
