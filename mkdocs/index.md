@@ -1,6 +1,14 @@
-# Zen Sets for Blender 1.3.4
+# Zen Sets for Blender 1.4.1
 
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
+
+<!-- ![IntroSets](img/IntroSets.png) -->
+<!-- blank line -->
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe width="1018" height="573" src="https://www.youtube.com/embed/LQR2H1OjKyI" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<!-- blank line -->
+<br/>
 
 <!-- ![IntroSets](img/IntroSets.png) -->
 <!-- blank line -->
@@ -62,7 +70,23 @@ Geometry can be assigned to a vertex, edge or face group and each group is repre
 ![uv_intro](img/screen/uv/uv_submode.gif)
 
 ## Object Mode
+### Modes
+![object_modes](img/screen/object_modes.png)
+
+#### Collections Mode
+Operates with Blender native collections
+
 ![obj_intro](img/screen/collections/intro.gif)
+
+#### Object Sets Mode
+One Object may be assigned to more than one group and only active group is displayed in the viewport. It does not affect on native Blender Collections.
+
+![obj_sets](img/screen/object_sets.gif)
+
+#### Object Parts Mode
+One Object may belong only to one group and all groups or active group can be displayed in the viewport. It does not affect on native Blender Collections.
+
+![obj_parts](img/screen/object_parts.gif)
 
 ### Object Smart Select and New Group Demo
 The example demonstrates how to combine 2 collections by using New Group and Smart Select

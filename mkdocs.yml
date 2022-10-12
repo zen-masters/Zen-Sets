@@ -1,5 +1,5 @@
-site_name: Zen Sets 1.3.4 for Blender
-site_description: Zen Sets 1.3.4 for Blender Documentation
+site_name: Zen Sets 1.4.1 for Blender
+site_description: Zen Sets 1.4.1 for Blender Documentation
 nav:
     - Introduction: index.md
     - Installation: installation.md

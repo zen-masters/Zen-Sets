@@ -177,6 +177,16 @@ Toggles the display of the active group in [Sets mode](npanel.md#sets-mode) or a
 ![uv_vis_only](img/screen/n_panel/uv_visible_only.gif)
 
 #### Display modified mesh
+Blender Modifiers can affect an object’s geometry in a non-destructive way. They work by changing how an object is displayed and rendered, but not the geometry which you can edit directly.
+
+By default, Zen Sets groups are displayed on the base object geometry but it is available with some performance loses see it on modified geometry.
+
+* ![mod_mesh_standard](img/screen/n_panel/display_mesh_standard.png) **Standard Display Mode**
+* ![mod_mesh_modified](img/screen/n_panel/display_mesh_modified.png) **Modified Display Mode**
+
+![mod_mesh_base](img/screen/n_panel/display_base_geometry.png)
+
+![mod_mesh_mod](img/screen/n_panel/display_mod_geometry.png)
 
 ![mod_mesh](img/screen/n_panel/modified_object.gif)
 
