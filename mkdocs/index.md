@@ -1,4 +1,4 @@
-# Zen Sets for Blender 1.4.1
+# Zen Sets for Blender 2.0.0
 
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 
@@ -64,7 +64,12 @@ One element (Vertex, Edge, Face) may belong only to one group and all groups or 
 ### Supported Elements
 ![Elements](img/screen/elements.png)
 
-Geometry can be assigned to a vertex, edge or face group and each group is represented as a different color in the 3D Viewport
+Geometry can be assigned to a vertex, edge or face Zen group or Blender Vertex Groups or Face Maps and each group is represented as a different color in the 3D Viewport
+
+### Blender Groups
+![bl_groups](img/screen/blender_groups_modes.png)
+
+![vert_gr_demo](img/screen/vertex_groups_demo.gif)
 
 ## UV Editing Mode
 ![uv_intro](img/screen/uv/uv_submode.gif)

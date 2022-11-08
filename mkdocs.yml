@@ -1,9 +1,10 @@
-site_name: Zen Sets 1.4.1 for Blender
-site_description: Zen Sets 1.4.1 for Blender Documentation
+site_name: Zen Sets 2.0.0 for Blender
+site_description: Zen Sets 2.0.0 for Blender Documentation
 nav:
     - Introduction: index.md
     - Installation: installation.md
     - N-Panel: npanel.md
+    - Group operators: group_operators.md
     - View3D Tool: workspacetool.md
     - Import-Export: imp_exp.md
     - Tools: tools.md
