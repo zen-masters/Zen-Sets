@@ -147,6 +147,9 @@ Selects Group Elements intersected with mesh selection
 
 ![group_intersect](img/screen/n_panel/group_intersect.gif)
 
+#### Select ungrouped
+Selects Group Elements that do not belong to any Group
+
 #### Smart select
 Depends on selected mesh elements and has the next behaviour:
 
@@ -167,6 +170,8 @@ Hides active group
 Unhides active group
 #### Isolate
 Hides elements that don't belong to active group or restore (unhide) all elements if the group was previously isolated
+#### Smart isolate
+Isolate all Groups that are present in multiselection or restore all Groups
 #### Display
 Toggles the display of the active group in [Sets mode](npanel.md#sets-mode) or all groups in [Parts mode](npanel.md#parts-mode). Also you can hide, unhide active group or hide elements that don't belong to the active group
 

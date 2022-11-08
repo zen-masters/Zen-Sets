@@ -34,6 +34,11 @@ The menu options marks or clear seams in the Selected Group
 
 ![to_uv_borders](img/screen/tools/assign_uv_borders.gif)
 
+### Remove Weight
+[](#change-weight-in-selected-group)
+
+### Change Weight in Selected Group
+
 ## Object Tools
 
 ### Batch Rename Groups
@@ -63,3 +68,7 @@ This creates an instance of the collection with the transformation of the object
 
 ### Convert Collection to Parent Object
 ![convert_collection_to_parent_object](img/screen/tools/convert_collection_to_parent_object.gif)
+
+### Sort Collections
+
+### Remove Linked
