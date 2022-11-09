@@ -70,5 +70,33 @@ This creates an instance of the collection with the transformation of the object
 ![convert_collection_to_parent_object](img/screen/tools/convert_collection_to_parent_object.gif)
 
 ### Sort Collections
+Blender Outliner has only creation order in the list of collections. There is an option "sort alphabetically" but it only works for objects. For those who has numerious collections we offer "Sort Collection Children" option
+
+| ![sort_tweak](img/screen/collections/sort_collections_tweak.png) |
+|---|
+| Sort Collections settings |
+
+#### Modes
+- **Human Sort** - the ordering of strings in alphabetical order, except that multi-digit numbers are treated atomically, i.e., as if they were a single character
+- **Human Last Integer** - sort by last integer, than in alphabetical order
+- **Human First Integer** - sort by first integer, than in alphabetical order
+- **Alpha Sort** - Pure alphabetical sort order
+- **Shuffle** - Shuffle a list (reorganize the order of the Collection items)
+
+| ![sort_collections](img/screen/collections/sort_collections_2.gif) |
+|---|
+| Sort Children Collections demo |
 
 ### Remove Linked
+| ![remove_linked](img/screen/collections/remove_linked.gif) |
+|---|
+| Remove Objects with linked data from Group |
+
+### Set Sculpt Mask
+| ![set_mask_settings](img/screen/tools/set_sculpt_mask_settings.png) |
+|---|
+| Set Sculpt Mask settings |
+
+| ![set_mask_settings](img/screen/tools/set_sculpt_mask.gif) |
+|---|
+| Set Sculpt Mask Demo |

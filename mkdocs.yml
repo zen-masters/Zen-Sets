@@ -13,6 +13,7 @@ nav:
     - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md
     - Changelog: changelog.md
+    - FAQ: faq.md
     - API: api.md
 
 docs_dir: mkdocs
