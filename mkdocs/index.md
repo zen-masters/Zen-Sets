@@ -50,53 +50,66 @@
 ## Edit Mesh Mode
 
 ### Modes
-![Modes](img/screen/modes.png)
+| ![Modes](img/screen/modes.png) |
+|---|
+
 #### Sets mode
 One element (Vertex, Edge, Face) may be assigned to more than one group and only active group is displayed in the viewport
 
-![sets_mode](img/screen/sets_mode.gif)
+| ![sets_mode](img/screen/sets_mode.gif) |
+|---|
 
 #### Parts mode
 One element (Vertex, Edge, Face) may belong only to one group and all groups or active group can be displayed in the viewport
 
-![parts_mode](img/screen/parts_mode.gif)
+| ![parts_mode](img/screen/parts_mode.gif) |
+|---|
 
 ### Supported Elements
-![Elements](img/screen/elements.png)
+| ![Elements](img/screen/elements.png) |
+|---|
 
 Geometry can be assigned to a vertex, edge or face Zen group or Blender Vertex Groups or Face Maps and each group is represented as a different color in the 3D Viewport
 
 ### Blender Groups
-![bl_groups](img/screen/blender_groups_modes.png)
+| ![bl_groups](img/screen/blender_groups_modes.png) |
+|---|
 
-![vert_gr_demo](img/screen/vertex_groups_demo.gif)
+| ![vert_gr_demo](img/screen/vertex_groups_demo_2.gif) |
+|---|
 
 ## UV Editing Mode
-![uv_intro](img/screen/uv/uv_submode.gif)
+| ![uv_intro](img/screen/uv/uv_submode.gif) |
+|---|
 
 ## Object Mode
 ### Modes
-![object_modes](img/screen/object_modes.png)
+| ![object_modes](img/screen/object_modes.png) |
+|---|
 
 #### Collections Mode
 Operates with Blender native collections
 
-![obj_intro](img/screen/collections/intro.gif)
+| ![obj_intro](img/screen/collections/intro.gif) |
+|---|
 
 #### Object Sets Mode
 One Object may be assigned to more than one group and only active group is displayed in the viewport. It does not affect on native Blender Collections.
 
-![obj_sets](img/screen/object_sets.gif)
+| ![obj_sets](img/screen/object_sets.gif) |
+|---|
 
 #### Object Parts Mode
 One Object may belong only to one group and all groups or active group can be displayed in the viewport. It does not affect on native Blender Collections.
 
-![obj_parts](img/screen/object_parts.gif)
+| ![obj_parts](img/screen/object_parts.gif) |
+|---|
 
 ### Object Smart Select and New Group Demo
 The example demonstrates how to combine 2 collections by using New Group and Smart Select
 
-![collections_combine](img/screen/n_panel/collections_combine.gif)
+| ![collections_combine](img/screen/n_panel/collections_combine.gif) |
+|---|
 
 **Enjoy this experience with us!**
 
