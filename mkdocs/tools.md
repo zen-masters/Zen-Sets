@@ -35,9 +35,22 @@ The menu options marks or clear seams in the Selected Group
 ![to_uv_borders](img/screen/tools/assign_uv_borders.gif)
 
 ### Remove Weight
-[](#change-weight-in-selected-group)
+Remove elements with Vertex Weight in given range from Active or All Group(s)
+
+!!! tip
+    This operator can be used to remove Elements with Zero Weight from Group
+
+| ![rem_w](img/screen/tools/remove_weight_settings.png) |
+|---|
+| Remove Weight settings |
+
+| ![rem_w_demo](img/screen/tools/remove_weight_demo.gif) |
+|---|
+| Remove Weight settings demo |
 
 ### Change Weight in Selected Group
+| ![change_w](img/screen/tools/change_weight.gif) |
+|---|
 
 ## Object Tools
 
