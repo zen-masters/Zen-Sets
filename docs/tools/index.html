@@ -105,6 +105,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#convert-collection-to-parent-object">Convert Collection to Parent Object</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#example-how-to-rotate-collection-around-a-point">Example How To Rotate Collection Around a Point</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#sort-collections">Sort Collections</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#modes">Modes</a>
@@ -172,21 +174,101 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link"></a></h1>
-<p><img alt="tools" src="../img/screen/n_panel/tools.png" /></p>
+<p>Zen Sets provides a variety of tools for editing meshes and organizing objects in Blender. Tools can be accessed either or from N-Panel popup menu</p>
+<table>
+<thead>
+<tr>
+<th><img alt="tools" src="../img/screen/n_panel/tools.png" /></th>
+<th><img alt="tools_intro" src="../img/screen/tools/tools_intro.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tools Subpanel</td>
+<td>N-Panel Popup menu</td>
+</tr>
+</tbody>
+</table>
 <h2 id="edit-mesh-tools">Edit Mesh Tools<a class="headerlink" href="#edit-mesh-tools" title="Permanent link"></a></h2>
 <h3 id="auto-groups">Auto Groups<a class="headerlink" href="#auto-groups" title="Permanent link"></a></h3>
-<p><img alt="auto_groups" src="../img/screen/tools/auto_groups.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="auto_groups" src="../img/screen/tools/auto_groups.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="auto-groups-by-custom-operator">Auto Groups by custom operator<a class="headerlink" href="#auto-groups-by-custom-operator" title="Permanent link"></a></h3>
-<p><img alt="auto_custom" src="../img/screen/tools/auto_groups_with_custom.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="auto_custom" src="../img/screen/tools/auto_groups_with_custom.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="create-objects-from-groups">Create Objects from Groups<a class="headerlink" href="#create-objects-from-groups" title="Permanent link"></a></h3>
-<p><img alt="create_objects" src="../img/screen/tools/create_objects.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="create_objects" src="../img/screen/tools/create_objects.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="assign-materials-to-groups">Assign materials to Groups<a class="headerlink" href="#assign-materials-to-groups" title="Permanent link"></a></h3>
-<p><img alt="assign_materials" src="../img/screen/tools/assign_materials.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="assign_materials" src="../img/screen/tools/assign_materials.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="split-group-edges">Split Group edges<a class="headerlink" href="#split-group-edges" title="Permanent link"></a></h3>
-<p><img alt="split_edges" src="../img/screen/tools/split_group_edges.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="split_edges" src="../img/screen/tools/split_group_edges.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="mark-and-clear-seams">Mark and clear seams<a class="headerlink" href="#mark-and-clear-seams" title="Permanent link"></a></h3>
-<p>The menu options marks or clear seams in the Selected Group
-<img alt="mark_seams" src="../img/screen/tools/mark_seams.gif" /></p>
+<p>The menu options marks or clear seams in the Selected Group</p>
+<table>
+<thead>
+<tr>
+<th><img alt="mark_seams" src="../img/screen/tools/mark_seams.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="assign-to-pinned-group">Assign to Pinned Group<a class="headerlink" href="#assign-to-pinned-group" title="Permanent link"></a></h3>
 <div class="admonition notice">
 <p class="admonition-title">Notice</p>
@@ -198,7 +280,18 @@
 <p class="admonition-title">Notice</p>
 <p><strong>This option is available only in Edge Sets Mode</strong></p>
 </div>
-<p><img alt="to_uv_borders" src="../img/screen/tools/assign_uv_borders.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="to_uv_borders" src="../img/screen/tools/assign_uv_borders.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assign UV Borders demo</td>
+</tr>
+</tbody>
+</table>
 <h3 id="remove-weight">Remove Weight<a class="headerlink" href="#remove-weight" title="Permanent link"></a></h3>
 <p>Remove elements with Vertex Weight in given range from Active or All Group(s)</p>
 <div class="admonition tip">
@@ -257,9 +350,106 @@
 <p>This creates an instance of the collection with the transformation of the object. Collection instancers can be animated using actions, or can get a Proxy.</p>
 <p><img alt="object_duplicate_instanced_collection" src="../img/screen/tools/object_duplicate_instanced_collection.gif" /></p>
 <h3 id="convert-parent-object-to-collection">Convert Parent Object to Collection<a class="headerlink" href="#convert-parent-object-to-collection" title="Permanent link"></a></h3>
-<p><img alt="convert_parent_object_to_collection" src="../img/screen/tools/convert_parent_object_to_collection.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="par_to_col_settings" src="../img/screen/collections/parent_object_to_collection_settings.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Convert Parent Object to Collection settings</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Skip Empty Objects</strong><ul>
+<li><strong>Auto</strong> - Skip Empty Parent Objects by calculated Collection Center</li>
+<li><strong>Skip All</strong> - Skip all Empty Parent Objects</li>
+<li><strong>Load All</strong> - Load all Empty Parent Objects</li>
+</ul>
+</li>
+<li><strong>Default Position</strong><ul>
+<li><strong>Zero Point</strong> - Move Parent object to zero coordinate position</li>
+<li><strong>Cursor 3D</strong> - Move Parent object to Cursor 3D position</li>
+</ul>
+</li>
+<li><strong>Calculate Center</strong><ul>
+<li><strong>By Default Position</strong> - Collection Center will be defined by Default Position Zero Point or Cursor 3D</li>
+<li><strong>By Objects</strong> - Collection Center will be calculated as average children origins point</li>
+<li><strong>By Nested Objects</strong> - Collection Center will be calculated as average itself children and all nested collections children origins point</li>
+</ul>
+</li>
+<li><strong>Use Average Rotation</strong> - Calculate Center position with average rotation</li>
+<li><strong>Use Average Scale</strong> - Calculate Center position with average scale</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><img alt="convert_parent_object_to_collection" src="../img/screen/tools/convert_to_collection.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Convert Parent Object to Collection demo</td>
+</tr>
+</tbody>
+</table>
 <h3 id="convert-collection-to-parent-object">Convert Collection to Parent Object<a class="headerlink" href="#convert-collection-to-parent-object" title="Permanent link"></a></h3>
-<p><img alt="convert_collection_to_parent_object" src="../img/screen/tools/convert_collection_to_parent_object.gif" /></p>
+<table>
+<thead>
+<tr>
+<th><img alt="col_to_par_settings" src="../img/screen/collections/collection_to_parent_object_settings.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Default Position</strong><ul>
+<li><strong>Zero Point</strong> - Move Parent object to zero coordinate position</li>
+<li><strong>Cursor 3D</strong> - Move Parent object to Cursor 3D position</li>
+</ul>
+</li>
+<li><strong>Calculate Center</strong><ul>
+<li><strong>By Default Position</strong> - Collection Center will be defined by Default Position Zero Point or Cursor 3D</li>
+<li><strong>By Objects</strong> - Collection Center will be calculated as average children origins point</li>
+<li><strong>By Nested Objects</strong> - Collection Center will be calculated as average itself children and all nested collections children origins point</li>
+</ul>
+</li>
+<li><strong>Use Average Rotation</strong> - Calculate Center position with average rotation</li>
+<li><strong>Use Average Scale</strong> - Calculate Center position with average scale</li>
+<li><strong>Select All</strong> - Select all child Objects</li>
+<li><strong>Display As</strong> - Representation of Parent Object as value of enum [&lsquo;Plain Axes&rsquo;, &lsquo;Arrows&rsquo;, &lsquo;Single Arrow&rsquo;, &lsquo;Circle&rsquo;, &lsquo;Cube&rsquo;, &lsquo;Sphere&rsquo;, &lsquo;Cone&rsquo;, &lsquo;Image&rsquo;]</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><img alt="convert_collection_to_parent_object" src="../img/screen/tools/convert_to_parent_object_2.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Convert Collection to Parent Object demo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-how-to-rotate-collection-around-a-point">Example How To Rotate Collection Around a Point<a class="headerlink" href="#example-how-to-rotate-collection-around-a-point" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th><img alt="how_to_rotate" src="../img/screen/tools/how_to_rotate_collection_by_axis.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="sort-collections">Sort Collections<a class="headerlink" href="#sort-collections" title="Permanent link"></a></h3>
 <p>Blender Outliner has only creation order in the list of collections. There is an option &ldquo;sort alphabetically&rdquo; but it only works for objects. For those who has numerious collections we offer &ldquo;Sort Collection Children&rdquo; option</p>
 <table>

@@ -1,26 +1,37 @@
 # Tools
-![tools](img/screen/n_panel/tools.png)
+Zen Sets provides a variety of tools for editing meshes and organizing objects in Blender. Tools can be accessed either or from N-Panel popup menu
+
+| ![tools](img/screen/n_panel/tools.png) | ![tools_intro](img/screen/tools/tools_intro.png) |
+|---|---|
+| Tools Subpanel | N-Panel Popup menu |
 
 ## Edit Mesh Tools
 
 ### Auto Groups
-![auto_groups](img/screen/tools/auto_groups.gif)
+| ![auto_groups](img/screen/tools/auto_groups.gif) |
+|---|
 
 ### Auto Groups by custom operator
-![auto_custom](img/screen/tools/auto_groups_with_custom.gif)
+| ![auto_custom](img/screen/tools/auto_groups_with_custom.gif) |
+|---|
 
 ### Create Objects from Groups
-![create_objects](img/screen/tools/create_objects.gif)
+| ![create_objects](img/screen/tools/create_objects.gif) |
+|---|
 
 ### Assign materials to Groups
-![assign_materials](img/screen/tools/assign_materials.gif)
+| ![assign_materials](img/screen/tools/assign_materials.gif) |
+|---|
 
 ### Split Group edges
-![split_edges](img/screen/tools/split_group_edges.gif)
+| ![split_edges](img/screen/tools/split_group_edges.gif) |
+|---|
 
 ### Mark and clear seams
 The menu options marks or clear seams in the Selected Group
-![mark_seams](img/screen/tools/mark_seams.gif)
+
+| ![mark_seams](img/screen/tools/mark_seams.gif) |
+|---|
 
 ### Assign to Pinned Group
 !!! Notice
@@ -32,7 +43,9 @@ The menu options marks or clear seams in the Selected Group
 !!! Notice
     **This option is available only in Edge Sets Mode**
 
-![to_uv_borders](img/screen/tools/assign_uv_borders.gif)
+| ![to_uv_borders](img/screen/tools/assign_uv_borders.gif) |
+|---|
+| Assign UV Borders demo |
 
 ### Remove Weight
 Remove elements with Vertex Weight in given range from Active or All Group(s)
@@ -77,10 +90,54 @@ This creates an instance of the collection with the transformation of the object
 ![object_duplicate_instanced_collection](img/screen/tools/object_duplicate_instanced_collection.gif)
 
 ### Convert Parent Object to Collection
-![convert_parent_object_to_collection](img/screen/tools/convert_parent_object_to_collection.gif)
+
+| ![par_to_col_settings](img/screen/collections/parent_object_to_collection_settings.png) |
+|---|
+| Convert Parent Object to Collection settings |
+
+- **Skip Empty Objects**
+    * **Auto** - Skip Empty Parent Objects by calculated Collection Center
+    * **Skip All** - Skip all Empty Parent Objects
+    * **Load All** - Load all Empty Parent Objects
+- **Default Position**
+    * **Zero Point** - Move Parent object to zero coordinate position
+    * **Cursor 3D** - Move Parent object to Cursor 3D position
+- **Calculate Center**
+    * **By Default Position** - Collection Center will be defined by Default Position Zero Point or Cursor 3D
+    * **By Objects** - Collection Center will be calculated as average children origins point
+    * **By Nested Objects** - Collection Center will be calculated as average itself children and all nested collections children origins point
+- **Use Average Rotation** - Calculate Center position with average rotation
+- **Use Average Scale** - Calculate Center position with average scale
+
+| ![convert_parent_object_to_collection](img/screen/tools/convert_to_collection.gif) |
+|---|
+| Convert Parent Object to Collection demo |
 
 ### Convert Collection to Parent Object
-![convert_collection_to_parent_object](img/screen/tools/convert_collection_to_parent_object.gif)
+
+| ![col_to_par_settings](img/screen/collections/collection_to_parent_object_settings.png) |
+|---|
+
+- **Default Position**
+    * **Zero Point** - Move Parent object to zero coordinate position
+    * **Cursor 3D** - Move Parent object to Cursor 3D position
+- **Calculate Center**
+    * **By Default Position** - Collection Center will be defined by Default Position Zero Point or Cursor 3D
+    * **By Objects** - Collection Center will be calculated as average children origins point
+    * **By Nested Objects** - Collection Center will be calculated as average itself children and all nested collections children origins point
+- **Use Average Rotation** - Calculate Center position with average rotation
+- **Use Average Scale** - Calculate Center position with average scale
+- **Select All** - Select all child Objects
+- **Display As** - Representation of Parent Object as value of enum ['Plain Axes', 'Arrows', 'Single Arrow', 'Circle', 'Cube', 'Sphere', 'Cone', 'Image']
+
+| ![convert_collection_to_parent_object](img/screen/tools/convert_to_parent_object_2.gif) |
+|---|
+| Convert Collection to Parent Object demo |
+
+### Example How To Rotate Collection Around a Point
+
+| ![how_to_rotate](img/screen/tools/how_to_rotate_collection_by_axis.gif) |
+|---|
 
 ### Sort Collections
 Blender Outliner has only creation order in the list of collections. There is an option "sort alphabetically" but it only works for objects. For those who has numerious collections we offer "Sort Collection Children" option
