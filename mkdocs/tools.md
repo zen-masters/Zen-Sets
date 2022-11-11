@@ -153,6 +153,49 @@ Blender Outliner has only creation order in the list of collections. There is an
 - **Alpha Sort** - Pure alphabetical sort order
 - **Shuffle** - Shuffle a list (reorganize the order of the Collection items)
 
+| ![sort_shuffle](img/screen/collections/sort_shuffle.png) | ![sort_shuffle](img/screen/collections/sort_human.png) |
+|---|---|
+| ![sort_shuffle](img/screen/collections/sort_shuffle.png) | ![sort_alpha](img/screen/collections/sort_alpha.png) |
+
+#### Order of sort
+##### 1. Suffix (Delimiter string)
+If suffix value is set, then Collections with suffix go up
+
+| Full name | Suffix | Suffix substring |
+|---|---|---|
+| Collection.001 | . | 001 |
+| Collection.002 | . | 002 |
+
+| ![sort_suffix](img/screen/collections/sort_suffix.png) |
+|---|
+| Example: **sort by suffix '.'** |
+
+##### 2. Prefix (Delimiter string)
+If prefix value is set, then Collections with prefix go up
+
+| Full name | Prefix | Prefix substring |
+|---|---|---|
+| HerCollection.001 | Collection | Her |
+| HisCollection.001 | Collection | His |
+
+| ![sort_prefix](img/screen/collections/sort_prefix.png) |
+|---|
+| Example: **sort by prefix '.'** |
+
+##### 3. Body Substring from suffix to prefix
+If prefix is set, then substring starts from prefix otherwise from the beginning
+
+If suffix is set, then substring ends till suffix otherwise the end
+
+| Full name | Prefix | Suffix | Body Substring |
+|---|---|---|---|
+| start-Collection001.end  | - | . | Collection001 |
+| start-Collection002.end  | - | . | Collection002 |
+| start-Collection003.end  | - | . | Collection003 |
+
+
+
+
 | ![sort_collections](img/screen/collections/sort_collections_2.gif) |
 |---|
 | Sort Children Collections demo |

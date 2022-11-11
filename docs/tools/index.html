@@ -111,6 +111,8 @@
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#modes">Modes</a>
     </li>
+    <li class="toctree-l4"><a class="reference internal" href="#order-of-sort">Order of sort</a>
+    </li>
         </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#remove-linked">Remove Linked</a>
@@ -472,6 +474,124 @@
 <li><strong>Alpha Sort</strong> - Pure alphabetical sort order</li>
 <li><strong>Shuffle</strong> - Shuffle a list (reorganize the order of the Collection items)</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th><img alt="sort_shuffle" src="../img/screen/collections/sort_shuffle.png" /></th>
+<th><img alt="sort_shuffle" src="../img/screen/collections/sort_human.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="sort_shuffle" src="../img/screen/collections/sort_shuffle.png" /></td>
+<td><img alt="sort_alpha" src="../img/screen/collections/sort_alpha.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="order-of-sort">Order of sort<a class="headerlink" href="#order-of-sort" title="Permanent link"></a></h4>
+<h5 id="1-suffix-delimiter-string">1. Suffix (Delimiter string)<a class="headerlink" href="#1-suffix-delimiter-string" title="Permanent link"></a></h5>
+<p>If suffix value is set, then Collections with suffix go up</p>
+<table>
+<thead>
+<tr>
+<th>Full name</th>
+<th>Suffix</th>
+<th>Suffix substring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collection.001</td>
+<td>.</td>
+<td>001</td>
+</tr>
+<tr>
+<td>Collection.002</td>
+<td>.</td>
+<td>002</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><img alt="sort_suffix" src="../img/screen/collections/sort_suffix.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example: <strong>sort by suffix &lsquo;.&rsquo;</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="2-prefix-delimiter-string">2. Prefix (Delimiter string)<a class="headerlink" href="#2-prefix-delimiter-string" title="Permanent link"></a></h5>
+<p>If prefix value is set, then Collections with prefix go up</p>
+<table>
+<thead>
+<tr>
+<th>Full name</th>
+<th>Prefix</th>
+<th>Prefix substring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HerCollection.001</td>
+<td>Collection</td>
+<td>Her</td>
+</tr>
+<tr>
+<td>HisCollection.001</td>
+<td>Collection</td>
+<td>His</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><img alt="sort_prefix" src="../img/screen/collections/sort_prefix.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example: <strong>sort by prefix &lsquo;.&rsquo;</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="3-body-substring-from-suffix-to-prefix">3. Body Substring from suffix to prefix<a class="headerlink" href="#3-body-substring-from-suffix-to-prefix" title="Permanent link"></a></h5>
+<p>If prefix is set, then substring starts from prefix otherwise from the beginning</p>
+<p>If suffix is set, then substring ends till suffix otherwise the end</p>
+<table>
+<thead>
+<tr>
+<th>Full name</th>
+<th>Prefix</th>
+<th>Suffix</th>
+<th>Body Substring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start-Collection001.end</td>
+<td>-</td>
+<td>.</td>
+<td>Collection001</td>
+</tr>
+<tr>
+<td>start-Collection002.end</td>
+<td>-</td>
+<td>.</td>
+<td>Collection002</td>
+</tr>
+<tr>
+<td>start-Collection003.end</td>
+<td>-</td>
+<td>.</td>
+<td>Collection003</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
