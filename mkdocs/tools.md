@@ -65,6 +65,15 @@ Remove elements with Vertex Weight in given range from Active or All Group(s)
 | ![change_w](img/screen/tools/change_weight.gif) |
 |---|
 
+### Set Sculpt Mask
+| ![set_mask_settings](img/screen/tools/set_sculpt_mask_settings.png) |
+|---|
+| Set Sculpt Mask settings |
+
+| ![set_mask_settings](img/screen/tools/set_mask_demo.gif) |
+|---|
+| Set Sculpt Mask Demo |
+
 ## Object Tools
 
 ### Batch Rename Groups
@@ -193,9 +202,6 @@ If suffix is set, then substring ends till suffix otherwise the end
 | start-Collection002.end  | - | . | Collection002 |
 | start-Collection003.end  | - | . | Collection003 |
 
-
-
-
 | ![sort_collections](img/screen/collections/sort_collections_2.gif) |
 |---|
 | Sort Children Collections demo |
@@ -205,11 +211,3 @@ If suffix is set, then substring ends till suffix otherwise the end
 |---|
 | Remove Objects with linked data from Group |
 
-### Set Sculpt Mask
-| ![set_mask_settings](img/screen/tools/set_sculpt_mask_settings.png) |
-|---|
-| Set Sculpt Mask settings |
-
-| ![set_mask_settings](img/screen/tools/set_sculpt_mask.gif) |
-|---|
-| Set Sculpt Mask Demo |
