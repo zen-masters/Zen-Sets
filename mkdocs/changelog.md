@@ -1,6 +1,21 @@
 # Changelog
 
 ---
+
+## Version 2.1.0
+
+### New:
+#### List Options:
+1. Display only active object collections
+
+#### Tools:
+1. Set active collection parent or child in 3D View and select all its objects
+2. Join objects in group and optionally mark them as Zen Sets face, vert parts or Blender face maps
+
+### Enhancement:
+1. Group common preferences by tabs
+
+---
 ## Version 2.0.2
 
 ### New:
