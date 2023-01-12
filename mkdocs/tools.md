@@ -76,6 +76,21 @@ Remove elements with Vertex Weight in given range from Active or All Group(s)
 
 ## Object Tools
 
+### Rename Group
+It is available to rename Group (Collection) from several places
+
+| ![rename_group](img/screen/tools/rename_group.png) |
+|---|
+| 1. Rename active group in Zen Sets toolbar |
+
+| ![rename_group_pie](img/screen/tools/rename_group_pie.png) |
+|---|
+| 2. Rename active group in Pie Menu |
+
+| ![rename_group_smart](img/screen/tools/rename_group_smart.png) |
+|---|
+| 3. Rename active group in tweak panel of Smart Select operator |
+
 ### Batch Rename Groups
 ![batch](img/screen/tools/batch_rename_groups.gif)
 
@@ -211,3 +226,7 @@ If suffix is set, then substring ends till suffix otherwise the end
 |---|
 | Remove Objects with linked data from Group |
 
+### Join Objects
+| ![remove_linked](img/screen/collections/join_objects.gif) |
+|---|
+| Join objects in group(s) and optionally mark them as face parts |

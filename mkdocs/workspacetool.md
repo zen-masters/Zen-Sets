@@ -42,3 +42,12 @@ Changes active Collection to the next in the list of all Collections and starts 
 Changes active Collection to the next in the list of all Selected Object Collections and starts from the first when reaches the end.
 
 ![collection_sel_obj_next](img/screen/workspacetool/collection_sel_obj_next.gif)
+
+### Select and Set Collection Parent or Child
+If you need to set active collection parent or child in 3D View without going to Tool mode there are corresponding operators
+
+| ![select_set](img/screen/collections/select_set_parent.png) |
+|---|
+| ![select_set_opts](img/screen/collections/select_set_parent_opts.png) |
+| ![scroll_parent_operators](img/screen/collections/scroll_parent_operators.gif) |
+| ![scroll_parent](img/screen/collections/scroll_parent_smart.gif) |

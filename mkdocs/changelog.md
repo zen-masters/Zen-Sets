@@ -1,6 +1,87 @@
 # Changelog
 
 ---
+## Version 2.0.2
+
+### New:
+#### List Options:
+1. Total area in Face Group
+2. Total perimeter in Face Group
+3. Total edge length in Edge Group
+
+### Fix:
+1. Import Vertex Colors - was not working for Vertex Groups and Face Maps
+
+---
+## Version 2.0.1
+### New:
+#### Pie Menu:
+1. Rename Group (Collection)
+#### Sculpt
+1. Add, Replace, Subtract and Intersect Sculpt Mask from any Zen Sets Group or Blender Vertex Group and Face Map
+2. Save Sculpt Mask to Vertex Group
+3. Toolbar in Sculpt Mode
+4. Vertex Group to Sculpt Mask Panel
+#### Tools
+1. Batch Rename Preview and support of regular expressions
+
+### Enhancement:
+1. Object Parts draw 2x faster
+
+### Fix:
+1. Delete All Collections caused error
+
+---
+## Version 2.0
+### New:
+
+#### 1. Vertex Groups and Face Maps Support in Zen Sets
+##### 1.1. Display System
+- Highlight Vertex Groups and Face Maps with Zen Sets overlay
+##### 1.2. Pie Menu
+Besides standard Zen Pie Menu options to toggle hide, select, append-remove etc.:
+- Display Weights
+- Assign
+- Isolate|Restore Group with option to use Mask Modifier to hide in Object Mode
+##### 1.3. WorkSpace Tool
+- Full tool support for Blender Vertex Groups and Face Maps in the same way as Zen Sets Groups
+##### 1.4. Tools
+Support of standard Zen Sets mesh element tools like 'Batch rename Groups', 'Create Objects from Groups' etc. and additional:
+- Remove vertices with given Weight Range from Group
+- Set Sculpt Mask
+##### 1.5. N-Panel
+- Vertex Groups and Face Maps hidden state, elements count
+- Vertex Weight monitor and status icon
+- Vertex Weight to Color converter and back
+- Vertex Weight Presets
+- Copy-Paste between all mesh Zen Sets modes
+
+#### 2. Object mode new features
+##### 2.1. Display System
+- Display active Object name and names of its user Collections (Groups)
+- Option to display names of all Collections (Groups)
+- Selected Collection indicator
+##### 2.2. Pie Menu
+- Remove selected from all Groups
+##### 2.3. Tools
+- Sort collections
+- Select Objects with Vertex Groups, Face Maps, Modifiers
+##### 2.3. N-Panel
+- Disable in Renders indicator and monitor
+- Remove selected from all Groups
+- Remove Objects with linked data from Groups
+
+### Enhancement:
+1. Hide objects after append to hidden Object Set
+2. Hide viewport, hide select and other status indicator detect object state also
+3. More performance in Edit Mesh mode
+4. If Zen Sets mode is switched off now, it speeds up total addon performance
+5. Option to Copy Groups with filter by name
+
+### Fix:
+1. Filters in UI Lists were not working
+
+---
 ## Version 1.4.1
 ### New:
 #### Tools:
