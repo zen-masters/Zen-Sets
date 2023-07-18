@@ -1,21 +1,25 @@
-site_name: Zen Sets 2.1 for Blender
-site_description: Zen Sets 2.1 for Blender Documentation
+site_name: Zen Sets 2.2 for Blender
+site_description: Zen Sets 2.2 for Blender Documentation
 nav:
-    - Introduction: index.md
-    - Installation: installation.md
-    - N-Panel: npanel.md
-    - Group operators: group_operators.md
-    - View3D Tool: workspacetool.md
-    - Import-Export: imp_exp.md
-    - Tools: tools.md
-    - Sculpt: sculpt.md
-    - Preferences: preferences.md
-    - Help: help.md
-    - Downloads: downloads.md
-    - Troubleshooting: troubleshooting.md
-    - Changelog: changelog.md
-    - FAQ: faq.md
-    - API: api.md
+    - Getting Started:
+        - Introduction: index.md
+        - Installation: installation.md
+    - Modules:
+        - N-Panel: npanel.md
+        - Group operators: group_operators.md
+        - View3D Tool: workspacetool.md
+        - Import-Export: imp_exp.md
+        - Tools: tools.md
+        - Sculpt: sculpt.md
+        - Objects: object_panel.md
+    - Additional:
+        - Preferences: preferences.md
+        - Help: help.md
+        - Downloads: downloads.md
+        - Troubleshooting: troubleshooting.md
+        - Changelog: changelog.md
+        - FAQ: faq.md
+        - API: api.md
 
 docs_dir: mkdocs
 site_dir: docs

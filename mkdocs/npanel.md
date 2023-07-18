@@ -8,6 +8,17 @@ N-Panel contains all Zen Sets addon functionality and consits of [Main](#main-su
 
 ---
 
+## Compact UI
+Compact N-Panel has several categories, which can be chosen via tabs (the icons column to its left). Each tab regroups different addon tasks, and is documented in its own manual sections
+
+| Switch Tabs |
+| --- |
+| ![npanel_compact](img/screen/n_panel/compact_ui.gif) |
+
+| Multiple Tabs | Pinned Tabs |
+|---|---|
+| ![](img/screen/n_panel/compact_n_panel_multi.gif) | ![](img/screen/n_panel/compact_n_panel_pinned.gif)
+
 ## Main Subpanel
 Contains all basic functionality for managing Zen Sets
 

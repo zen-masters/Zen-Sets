@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>N-Panel - Zen Sets 2.1 for Blender</title>
+    <title>N-Panel - Zen Sets 2.2 for Blender</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -31,26 +31,28 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Zen Sets 2.1 for Blender
+          <a href=".." class="icon icon-home"> Zen Sets 2.2 for Blender
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
-                </li>
-              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">N-Panel</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">N-Panel</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#compact-ui">Compact UI</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#main-subpanel">Main Subpanel</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#active-zen-sets-element-switch">Active Zen Sets Element Switch</a>
@@ -150,55 +152,36 @@
     <li class="toctree-l2"><a class="reference internal" href="#help-subpanel">Help Subpanel</a>
     </li>
     </ul>
-                </li>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../group_operators/">Group operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../workspacetool/">View3D Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../imp_exp/">Import-Export</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sculpt/">Sculpt</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../object_panel/">Objects</a>
+                  </li>
               </ul>
+              <p class="caption"><span class="caption-text">Additional</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../group_operators/">Group operators</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../workspacetool/">View3D Tool</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../imp_exp/">Import-Export</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../sculpt/">Sculpt</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../api/">API</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">API</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -207,19 +190,20 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Zen Sets 2.1 for Blender</a>
+          <a href="..">Zen Sets 2.2 for Blender</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>N-Panel</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+      <li>N-Panel</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
@@ -231,6 +215,34 @@
 </div>
 <p><img alt="npanel" src="../img/screen/n_panel/n_panel_preview.gif" />    </p>
 <hr />
+<h2 id="compact-ui">Compact UI<a class="headerlink" href="#compact-ui" title="Permanent link"></a></h2>
+<p>Compact N-Panel has several categories, which can be chosen via tabs (the icons column to its left). Each tab regroups different addon tasks, and is documented in its own manual sections</p>
+<table>
+<thead>
+<tr>
+<th>Switch Tabs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="npanel_compact" src="../img/screen/n_panel/compact_ui.gif" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Multiple Tabs</th>
+<th>Pinned Tabs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="../img/screen/n_panel/compact_n_panel_multi.gif" /></td>
+<td><img alt="" src="../img/screen/n_panel/compact_n_panel_pinned.gif" /></td>
+</tr>
+</tbody>
+</table>
 <h2 id="main-subpanel">Main Subpanel<a class="headerlink" href="#main-subpanel" title="Permanent link"></a></h2>
 <p>Contains all basic functionality for managing Zen Sets</p>
 <p><img alt="npanel_main" src="../img/screen/n_panel/n_panel_main.png" /></p>

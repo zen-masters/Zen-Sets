@@ -1,7 +1,13 @@
-# Zen Sets for Blender 2.1
+# Zen Sets for Blender 2.2
 
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 
+<!-- blank line -->
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe width="1018" height="573" src="https://www.youtube.com/embed/__ajuyozy8Q" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<!-- blank line -->
+<br/>
 
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
@@ -129,8 +135,9 @@ The example demonstrates how to combine 2 collections by using New Group and Sma
 - [**Intuitive UI**](npanel.md) with multifunctional **[N-Panel](npanel.md), Pie menu and [Workspace Tool](workspacetool.md)**.
 - **Context-sensitive help** that is obtained from an every button in UI by pressing F1.
 - [**Display System**](npanel.md#display-group) that helps find and select each Group by displaying it by color in the viewport.
-- **[Zen Sets Workspace Tool](workspacetool.md)** for fast switching between Elements Modes. It also provides a simulation of Zbrush Polygroup behavior for [Selecting and Hiding Groups](workspacetool.md).
+- [**Zen Sets Workspace Tool**](workspacetool.md) for fast switching between Elements Modes. It also provides a simulation of Zbrush Polygroup behavior for [Selecting and Hiding Groups](workspacetool.md).
 - [**Import / Export Zen Sets Groups**](imp_exp.md) to native Vertex Groups, Face Maps, Vertex Colors, and vice versa.
+- [**Objects Panel**](object_panel.md) provides quick access to the list of group objects in Object Mode and edited objects in Edit Mode
 - [**Auto Groups Operator**](tools.md#auto-groups) to create Groups automatically from linked faces.
 - [**Create Objects from Groups Operator**](tools.md#create-objects-from-groups). Divide mesh into Objects using Zen Sets Groups.
 - [**Assign Materials to Groups Operator**](tools.md#assign-materials-to-groups).
