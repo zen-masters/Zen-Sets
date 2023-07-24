@@ -154,6 +154,15 @@ Selects Elements of selected Group
 
 ![](img/screen/n_panel/select_more_than_one.gif)
 
+#### Select more than one group in the viewport
+
+1) Select element from group 1
+2) `Alt + F2` - select all group 1 and make it primary
+3) Shift + select element from group 2
+4) `Alt + F3` - extend selection with all elements from group 2
+
+![](img/screen/n_panel/select_more_than_one_hotkeys.gif)
+
 #### Deselect
 Removes selected Group Elements from mesh selection
 
