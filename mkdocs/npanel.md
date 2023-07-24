@@ -148,6 +148,12 @@ Selects Elements of selected Group
 
 ![group_select](img/screen/n_panel/group_select.gif)
 
+#### Select more than one group using N-Panel
+1. Disable ![n_panel_toolbar_single_select](img/screen/n_panel/n_panel_toolbar_single_select.png) **Selection follows Selected Group** option
+2. Disable **Clear Selection** option
+
+![](img/screen/n_panel/select_more_than_one.gif)
+
 #### Deselect
 Removes selected Group Elements from mesh selection
 
