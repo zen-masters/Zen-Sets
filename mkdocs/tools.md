@@ -229,6 +229,10 @@ If suffix is set, then substring ends till suffix otherwise the end
 ### Join Objects
 Gives an option to mark all mesh in object with vert, face part or face map group before Blender standard [Join](https://docs.blender.org/manual/en/latest/scene_layout/object/editing/join.html) operation. Thus it will be available to split them back into objects or to no in newly created mesh where is each previous object mesh part now
 
-| ![remove_linked](img/screen/collections/join_objects.gif) |
+| ![join_object](img/screen/collections/join_objects.gif) |
 |---|
 | Join objects in group(s) and optionally mark them as face parts |
+
+| ![join_objects_uv](img/screen/tools/join_object_detect_uvs.gif) |
+|---|
+| Example how to detect UV Maps with the same name when objects were joined |
