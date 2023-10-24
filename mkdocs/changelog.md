@@ -1,5 +1,60 @@
 # Changelog
 
+## Version 2.2.2
+
+### New:
+
+#### UI List:
+1. Option to select multiple groups in list
+
+#### Tools:
+1. Rename mesh groups by material
+
+#### Display:
+1. Option to switch off display in View3D and activate only in UV
+
+### Fix:
+1. Wrong hierarchy of child-parent objects
+2. Text, metaball objects were not shown
+3. Mesh groups filtering and sorting were not working properly
+4. Ensure active object in Group Selector caused error in mesh selector
+
+### Enhancement:
+1. Option to change default groups list and objects list row count in preferences
+2. AutoGroups multi object fix, added presets: Similar by normal, Similar by material
+
+---
+
+## Version 2.2
+
+### New:
+
+#### Draw:
+Python BGL module was replaced with GPU
+
+#### UI:
+1. New compact user interface
+2. Addon popup menu
+3. Object Panel
+
+#### Object Panel:
+1. Display objects of the active group
+2. Multiple object filters:
+   - show objects with different properties (Example: Disable in Renders != Disable in Viewport)
+3. Display objects in Edit Mode with the option to center selected object in the viewport
+4. Filter objects with unique data
+
+#### Tools:
+1. Make a group from objects visible to the active camera
+2. Select objects visible to the active camera
+3. Add materials to collections
+
+### Enhancement:
+1. Adopt the name of the active object when new group is created
+2. Option to select object collection if active object is linked to multiple collections
+3. Ensure active object in Group Selector
+4. Option to delete all empty objects when parent object is converted to collection
+
 ---
 
 ## Version 2.1.0

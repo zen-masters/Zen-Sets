@@ -236,3 +236,13 @@ Gives an option to mark all mesh in object with vert, face part or face map grou
 | ![join_objects_uv](img/screen/tools/join_object_detect_uvs.gif) |
 |---|
 | Example how to detect UV Maps with the same name when objects were joined |
+
+### Colorize Selected Objects
+Highlights selected objects with a random color.
+
+!!! NOTE
+    Default hotkey is `ALT+L`
+
+| ![colorize_sel_objs](img/screen/tools/get_colorized_selected.gif) |
+|---|
+| Example how to identify instanced (linked) objects |
