@@ -14,5 +14,17 @@ Vert, Edge, Face Sets and Parts
 Demonstration how to use Zen Sets groups
 for extrude mesh geometry node modificator
 
+#### Details
+| ![](images/extrude_mesh.png) |
+|---|
+| |
+
 [//]: # (https://github.com/zen-masters/Zen-Sets/raw/main/examples/ZenSets_GroupsForExtrude.zip)
+
+### Terrain Layers
+Demonstration how to set procedural Terrain Layers materials and mesh scattering based on Zen Sets Groups
+
+#### Details
+
+[//]: # (https://github.com/zen-masters/Zen-Sets/raw/main/examples/ZenSets_TerrainLayers.zip)
 
