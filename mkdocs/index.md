@@ -142,6 +142,7 @@ The example demonstrates how to combine 2 collections by using New Group and Sma
 - [**Create Objects from Groups Operator**](tools.md#create-objects-from-groups). Divide mesh into Objects using Zen Sets Groups.
 - [**Assign Materials to Groups Operator**](tools.md#assign-materials-to-groups).
 - [**Possibility to use Zen Sets Groups by external operators**](api.md). Implement Zen Sets for your own pipelines.
+- [**Value To Color** and **Select By ID** Geometry Nodes](geometry_nodes.md). It is available to use Zen Sets groups in Geometry Nodes
 
 ## Default Shortcuts
 You may override or disable every Zen Sets hotkey in addon preferences Keymap section

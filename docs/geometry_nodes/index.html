@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Geometry Nodes - Zen Sets 2.3 for Blender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Geometry Nodes";
+        var mkdocs_page_input_path = "geometry_nodes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Zen Sets 2.3 for Blender
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../npanel/">N-Panel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../group_operators/">Group operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../workspacetool/">View3D Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../imp_exp/">Import-Export</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sculpt/">Sculpt</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Geometry Nodes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#parts-mode">Parts Mode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sets-mode">Sets Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-change-face-sets-attribute-name">How To Change Face Sets Attribute Name</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-node">Create Node</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#value-to-color-node">Value To Color Node</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selection-by-id-node">Selection By ID Node</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#group-name-to-id">Group Name To ID</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../object_panel/">Objects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Additional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">API</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Zen Sets 2.3 for Blender</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Modules</li>
+      <li class="breadcrumb-item active">Geometry Nodes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="geometry-nodes">Geometry Nodes<a class="headerlink" href="#geometry-nodes" title="Permanent link"></a></h1>
+<p>Every Zen Sets group can be used in Geometry Nodes. Attribute implementation depends on Sets or Parts mode</p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_preview.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not delete or rename Group Attributes manually !
+<img alt="" src="../img/screen/geo_nodes/geo_nodes_parts_not_delete.png" /></p>
+</div>
+<h2 id="parts-mode">Parts Mode<a class="headerlink" href="#parts-mode" title="Permanent link"></a></h2>
+<p>There is a fixed attribute for every Parts mode. Every group has its own unique integer identifier within the current Scene. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Value 0 is used for elements that are not assigned to any group</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Mesh Element</th>
+<th>Attribute Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vert Parts</td>
+<td>Vertex</td>
+<td>zen_vert_u_hash_layer</td>
+</tr>
+<tr>
+<td>Edge Parts</td>
+<td>Edge</td>
+<td>zen_edge_u_hash_layer</td>
+</tr>
+<tr>
+<td>Face Parts</td>
+<td>Face</td>
+<td>zen_face_u_hash_layer</td>
+</tr>
+<tr>
+<td>Face Maps</td>
+<td>Face</td>
+<td>face_maps</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sets-mode">Sets Mode<a class="headerlink" href="#sets-mode" title="Permanent link"></a></h2>
+<p>Every group in Sets Mode is exposed as separate integer attribute with 1 value if elemement belongs to the group and 0 if not. Name is based on uuid by default. And has the next format:
+<pre class="highlight"><code>zen_{vert|edge|face}_{128-bit uuid}</code></pre></p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_sets_mode.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of the default Face Set attribute</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-change-face-sets-attribute-name">How To Change Face Sets Attribute Name<a class="headerlink" href="#how-to-change-face-sets-attribute-name" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_change_name_res.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of Face Sets group renamed to the simple name</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>Call <strong>Change Group Attribute Name</strong> operator
+<img alt="" src="../img/screen/geo_nodes/geo_nodes_sets_change_name.png" /></p>
+</li>
+<li>
+<p>Type New Attribute Name and press <strong>OK</strong>
+<img alt="" src="../img/screen/geo_nodes/geo_nodes_sets_change_name_2.png" /></p>
+</li>
+</ol>
+<h2 id="create-node">Create Node<a class="headerlink" href="#create-node" title="Permanent link"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Available in Parts Mode only</p>
+</div>
+<h3 id="value-to-color-node">Value To Color Node<a class="headerlink" href="#value-to-color-node" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_value_to_color.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add node to the editor and connect to outputs</td>
+</tr>
+<tr>
+<td><img alt="" src="../img/screen/geo_nodes/add_color_node.gif" /></td>
+</tr>
+<tr>
+<td>Encode group identifiers with color values and create temporary color attribute</td>
+</tr>
+<tr>
+<td><img alt="" src="../img/screen/geo_nodes/add_color_node_shading.gif" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="selection-by-id-node">Selection By ID Node<a class="headerlink" href="#selection-by-id-node" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/select_by_id.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example how to add and use Select By ID node for Extrude Mesh modificator</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-name-to-id">Group Name To ID<a class="headerlink" href="#group-name-to-id" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/group_name_to_id.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example how to use group names in Geometry Nodes</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../sculpt/" class="btn btn-neutral float-left" title="Sculpt"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../object_panel/" class="btn btn-neutral float-right" title="Objects">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../sculpt/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../object_panel/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

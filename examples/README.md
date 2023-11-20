@@ -22,7 +22,9 @@ for extrude mesh geometry node modificator
 [//]: # (https://github.com/zen-masters/Zen-Sets/raw/main/examples/ZenSets_GroupsForExtrude.zip)
 
 ### Terrain Layers
-Demonstration how to set procedural Terrain Layers materials and mesh scattering based on Zen Sets Groups
+Demonstration how to set procedural
+Terrain Layers materials and
+mesh scattering based on Zen Sets Groups
 
 #### Details
 | ![](images/terrain_layers.png) |
