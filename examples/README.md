@@ -33,3 +33,15 @@ mesh scattering based on Zen Sets Groups
 
 [//]: # (https://github.com/zen-masters/Zen-Sets/raw/main/examples/ZenSets_TerrainLayers.zip)
 
+## Custom Scripts
+
+### Nova Export
+Demonstration how to export objects to Unreal Engine fbx
+
+#### Details
+| ![](images/nova_export.png) |
+|---|
+| |
+
+[//]: # (https://github.com/zen-masters/Zen-Sets/raw/main/examples/NOVA_Export_Test.zip)
+
