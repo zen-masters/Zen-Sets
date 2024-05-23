@@ -1,5 +1,45 @@
 # Changelog
 
+## Version 2.4
+
+### New:
+1. Custom scripts
+2. Nova Export
+
+#### Enhancement:
+1. Option to convert multiple parent objects to collections
+2. Batch rename by variables
+3. Auto groups by parent objects with hierarchies
+4. Ignore scrolling collections in tool mode
+5. Apply modifiers and transforms before Join objects
+6. Option to work with Zen Sets in background mode
+
+#### Fix:
+1. Tool scroll not working when some collections are isolated
+2. Delete group with "Hierarchy" option does not work in Object Parts mode
+3. New group name by active object didn't work properly
+
+## Version 2.3
+
+### New:
+1. Blender 4.0 Support
+2. Example Panel
+
+#### Tools:
+1. Mesh groups to islands
+2. Change group ID
+
+#### Import-Export:
+1. Blender Sculpt Face Sets
+2. Blender 4.0 Face Maps Attribute
+3. Blender Integer Attributes
+
+### Geometry Nodes:
+1. Value To Color Node
+2. Select By Group ID Node
+3. Group Name To ID Node
+4. Panel in Geometry Node Editor N-Panel
+
 ## Version 2.2.2
 
 ### New:
