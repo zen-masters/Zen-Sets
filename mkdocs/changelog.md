@@ -1,5 +1,36 @@
 # Changelog
 
+## Version 2.4.3
+
+### New:
+1. Added support for **Blender 4.3**
+2. Generic "Iterate Groups" operator
+
+#### Enhancement:
+1. Option to switch off Gizmo Help Button in Preferences
+
+#### Fix:
+1. Can not group similar mesh by material in "Auto Groups" operator in Blender greater 4.0
+2. Pie assist is not working in Blender 4.3
+3. Object collections mode is not working in Blender 4.3
+
+## Version 2.4.2
+
+#### Fix:
+1. Geometry Node Tools were broken for Blender 4.2
+
+## Version 2.4.1
+
+### New:
+1. Option to change N-Panel name from "Zen Sets" to "Zen"
+
+#### Enhancement:
+1. Right menu extended items can be switched off in Preferences
+
+#### Fix:
+1. Sculpt group operations corrected for Blender 4.2
+
+
 ## Version 2.4
 
 ### New:
