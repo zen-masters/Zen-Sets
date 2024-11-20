@@ -66,6 +66,10 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#sets-mode">Sets Mode</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#attribute-names-match-group-name">Attribute Names Match Group Name</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attribute-names-are-unique">Attribute Names Are Unique</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#how-to-change-face-sets-attribute-name">How To Change Face Sets Attribute Name</a>
     </li>
         </ul>
@@ -183,7 +187,51 @@
 </tbody>
 </table>
 <h2 id="sets-mode">Sets Mode<a class="headerlink" href="#sets-mode" title="Permanent link"></a></h2>
-<p>Every group in Sets Mode is exposed as separate integer attribute with 1 value if elemement belongs to the group and 0 if not. Name is based on uuid by default. And has the next format:
+<p>Every group in Sets Mode is exposed as separate integer attribute with 1 value if elemement belongs to the group and 0 if not.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_face_attr_group.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Option to switch attribute naming</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_sync_attr_name.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Face Sets group and its attribute</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attribute-names-match-group-name">Attribute Names Match Group Name<a class="headerlink" href="#attribute-names-match-group-name" title="Permanent link"></a></h3>
+<p>If option &lsquo;Sync Attribute Name&rsquo; is set attribute will have the same name as the group name</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You should take care about group naming to prevent name collisions with Blender internal attributes</p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../img/screen/geo_nodes/geo_nodes_name_collisions.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of attribute name collisions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="attribute-names-are-unique">Attribute Names Are Unique<a class="headerlink" href="#attribute-names-are-unique" title="Permanent link"></a></h3>
+<p>If option &lsquo;Sync Attribute Name&rsquo; is unset then attribute will have unique name with the next format:
 <pre class="highlight"><code>zen_{vert|edge|face}_{128-bit uuid}</code></pre></p>
 <table>
 <thead>

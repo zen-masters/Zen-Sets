@@ -5,9 +5,11 @@
 ### New:
 1. Added support for **Blender 4.3**
 2. Generic "Iterate Groups" operator
+3. Attributes in "Sets" mode are synchronized with group name (for better Geometry Nodes support)
 
 #### Enhancement:
 1. Option to switch off Gizmo Help Button in Preferences
+2. Keymap collision indication
 
 #### Fix:
 1. Can not group similar mesh by material in "Auto Groups" operator in Blender greater 4.0

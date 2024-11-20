@@ -23,7 +23,28 @@ There is a fixed attribute for every Parts mode. Every group has its own unique 
 | Face Maps | Face | face_maps |
 
 ## Sets Mode
-Every group in Sets Mode is exposed as separate integer attribute with 1 value if elemement belongs to the group and 0 if not. Name is based on uuid by default. And has the next format:
+Every group in Sets Mode is exposed as separate integer attribute with 1 value if elemement belongs to the group and 0 if not.
+
+| ![](img/screen/geo_nodes/geo_nodes_face_attr_group.png) |
+|---|
+| Option to switch attribute naming |
+
+| ![](img/screen/geo_nodes/geo_nodes_sync_attr_name.png) |
+|---|
+| Face Sets group and its attribute |
+
+### Attribute Names Match Group Name
+If option 'Sync Attribute Name' is set attribute will have the same name as the group name
+
+!!! WARNING
+    You should take care about group naming to prevent name collisions with Blender internal attributes
+
+    | ![](img/screen/geo_nodes/geo_nodes_name_collisions.png) |
+    |---|
+    | Example of attribute name collisions |
+
+### Attribute Names Are Unique
+If option 'Sync Attribute Name' is unset then attribute will have unique name with the next format:
 ```
 zen_{vert|edge|face}_{128-bit uuid}
 ```
