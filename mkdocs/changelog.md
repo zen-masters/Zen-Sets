@@ -1,5 +1,16 @@
 # Changelog
 
+## Release Note Zen Sets 2.4.4
+### New
+1. Horisontal button layout in Combo Panel
+
+### Enhancement
+1. Iterate Zen Sets object modes by `Shift+Ctrl+Wheel Up/Down`
+2. Option to alternatively set Collection Parent Selector by `Shift+Ctrl+Wheel Up/Down`
+
+### Fix
+1. Tweak and select mode panel was missing in Zen Sets workspace tool
+
 ## Version 2.4.3
 
 ### New:
