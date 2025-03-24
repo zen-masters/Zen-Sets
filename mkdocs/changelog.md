@@ -1,5 +1,9 @@
 # Changelog
 
+## Release Note Zen Sets 2.4.5
+### New
+1. Added support for **Blender 4.4**
+
 ## Release Note Zen Sets 2.4.4
 ### New
 1. Horisontal button layout in Combo Panel
