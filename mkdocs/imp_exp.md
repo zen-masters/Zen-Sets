@@ -38,3 +38,10 @@ Available in Zen Sets Vert Sets, Vert Parts modes
 Available in Zen Sets Face Sets, Face Parts modes
 
 ![export_face_maps](img/screen/imp_exp/export_face_maps.png)
+
+## Import-export Blender Sculpt Face Sets
+Available in Zen Sets Face Parts and Face Maps modes
+
+| ![](img/screen/imp_exp/export_sculpt_face_sets.png) | ![](img/screen/imp_exp/export_sculpt_face_sets_menu.png) |
+|---|---|
+| | |
