@@ -1,5 +1,5 @@
-site_name: Zen Sets 2.4.5 for Blender
-site_description: Zen Sets 2.4.5 for Blender Documentation
+site_name: Zen Sets 2.5.0 for Blender
+site_description: Zen Sets 2.5.0 for Blender Documentation
 nav:
     - Getting Started:
         - Introduction: index.md

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Changelog - Zen Sets 2.4.5 for Blender</title>
+    <title>Changelog - Zen Sets 2.5.0 for Blender</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -30,7 +30,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Zen Sets 2.4.5 for Blender
+          <a href=".." class="icon icon-home"> Zen Sets 2.5.0 for Blender
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -77,15 +77,9 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Changelog</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#release-note-zen-sets-245">Release Note Zen Sets 2.4.5</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-250">Version 2.5.0</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new">New</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#release-note-zen-sets-244">Release Note Zen Sets 2.4.4</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_1">New</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#enhancement">Enhancement</a>
     </li>
@@ -93,13 +87,29 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-245">Version 2.4.5</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new_1">New</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-244">Version 2.4.4</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new_2">New</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_1">Enhancement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_1">Fix</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-243">Version 2.4.3</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_2">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_3">New:</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#enhancement_1">Enhancement:</a>
+    <li class="toctree-l4"><a class="reference internal" href="#enhancement_2">Enhancement:</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#fix_1">Fix:</a>
+    <li class="toctree-l4"><a class="reference internal" href="#fix_2">Fix:</a>
     </li>
         </ul>
     </li>
@@ -107,23 +117,11 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-242">Version 2.4.2</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_2">Fix:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_3">Fix:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-241">Version 2.4.1</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_3">New:</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#enhancement_2">Enhancement:</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#fix_3">Fix:</a>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#version-24">Version 2.4</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new_4">New:</a>
         <ul>
@@ -135,9 +133,21 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#version-23">Version 2.3</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-24">Version 2.4</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new_5">New:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#enhancement_4">Enhancement:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#fix_5">Fix:</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-23">Version 2.3</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new_6">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#tools">Tools:</a>
     </li>
@@ -151,7 +161,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-222">Version 2.2.2</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_6">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_7">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#ui-list">UI List:</a>
     </li>
@@ -161,15 +171,15 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_5">Fix:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_6">Fix:</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_4">Enhancement:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_5">Enhancement:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-22">Version 2.2</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_7">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_8">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#draw">Draw:</a>
     </li>
@@ -181,13 +191,13 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_5">Enhancement:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_6">Enhancement:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-210">Version 2.1.0</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_8">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_9">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#list-options">List Options:</a>
     </li>
@@ -195,25 +205,25 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_6">Enhancement:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_7">Enhancement:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-202">Version 2.0.2</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_9">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_10">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#list-options_1">List Options:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_6">Fix:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_7">Fix:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-201">Version 2.0.1</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_10">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_11">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#pie-menu">Pie Menu:</a>
     </li>
@@ -223,15 +233,15 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_7">Enhancement:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_8">Enhancement:</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_7">Fix:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_8">Fix:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-20">Version 2.0</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_11">New:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#new_12">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#1-vertex-groups-and-face-maps-support-in-zen-sets">1. Vertex Groups and Face Maps Support in Zen Sets</a>
     </li>
@@ -239,27 +249,27 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_8">Enhancement:</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_8">Fix:</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#version-141">Version 1.4.1</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_12">New:</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#tools_5">Tools:</a>
-    </li>
-        </ul>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_9">Enhancement:</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#fix_9">Fix:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#version-14">Version 1.4</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-141">Version 1.4.1</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new_13">New:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#tools_5">Tools:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_10">Fix:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-14">Version 1.4</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new_14">New:</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#1-simple-object-sets-and-parts">1. Simple Object Sets and Parts</a>
     </li>
@@ -271,45 +281,29 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_9">Enhancement:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_10">Enhancement:</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_10">Fix:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_11">Fix:</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-134">Version 1.3.4</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_11">Fix</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_12">Fix</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-133">Version 1.3.3</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_12">Fix</a>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_13">Fix</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#version-130">Version 1.3.0</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#new_14">New:</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#1-uv-support-for-zen-sets">1. UV Support for Zen Sets</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enhancement_10">Enhancement:</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fix_13">Fix:</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#version-120">Version 1.2.0</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new_15">New:</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#1-functionality-for-the-management-of-collections">1. Functionality for the management of collections</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#2-palette">2. Palette</a>
+    <li class="toctree-l4"><a class="reference internal" href="#1-uv-support-for-zen-sets">1. UV Support for Zen Sets</a>
     </li>
         </ul>
     </li>
@@ -319,13 +313,29 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#version-110">Version 1.1.0</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-120">Version 1.2.0</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#new_16">New:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-functionality-for-the-management-of-collections">1. Functionality for the management of collections</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-palette">2. Palette</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#enhancement_12">Enhancement:</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#fix_15">Fix:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-110">Version 1.1.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new_17">New:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enhancement_13">Enhancement:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix_16">Fix:</a>
     </li>
         </ul>
     </li>
@@ -345,7 +355,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Zen Sets 2.4.5 for Blender</a>
+          <a href="..">Zen Sets 2.5.0 for Blender</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -363,68 +373,86 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link"></a></h1>
-<h2 id="release-note-zen-sets-245">Release Note Zen Sets 2.4.5<a class="headerlink" href="#release-note-zen-sets-245" title="Permanent link"></a></h2>
+<h2 id="version-250">Version 2.5.0<a class="headerlink" href="#version-250" title="Permanent link"></a></h2>
 <h3 id="new">New<a class="headerlink" href="#new" title="Permanent link"></a></h3>
+<ol>
+<li>Added support for <strong>Blender 5.0</strong></li>
+<li>Export Objects Groups to Vertex Color</li>
+<li>Export UV Groups Display to an image</li>
+<li>Join groups with the same name</li>
+</ol>
+<h3 id="enhancement">Enhancement<a class="headerlink" href="#enhancement" title="Permanent link"></a></h3>
+<ol>
+<li>Disable Zen Sets keymaps by categories</li>
+<li>Duplicate collection with keeping hidden objects</li>
+</ol>
+<h3 id="fix">Fix<a class="headerlink" href="#fix" title="Permanent link"></a></h3>
+<ol>
+<li>Groups with negative identifiers didn&rsquo;t make a warning while exporting to Sculpt face sets</li>
+<li>Groups in Sets Mode could be cleared in rename field editor</li>
+</ol>
+<h2 id="version-245">Version 2.4.5<a class="headerlink" href="#version-245" title="Permanent link"></a></h2>
+<h3 id="new_1">New<a class="headerlink" href="#new_1" title="Permanent link"></a></h3>
 <ol>
 <li>Added support for <strong>Blender 4.4</strong></li>
 </ol>
-<h2 id="release-note-zen-sets-244">Release Note Zen Sets 2.4.4<a class="headerlink" href="#release-note-zen-sets-244" title="Permanent link"></a></h2>
-<h3 id="new_1">New<a class="headerlink" href="#new_1" title="Permanent link"></a></h3>
+<h2 id="version-244">Version 2.4.4<a class="headerlink" href="#version-244" title="Permanent link"></a></h2>
+<h3 id="new_2">New<a class="headerlink" href="#new_2" title="Permanent link"></a></h3>
 <ol>
 <li>Horisontal button layout in Combo Panel</li>
 </ol>
-<h3 id="enhancement">Enhancement<a class="headerlink" href="#enhancement" title="Permanent link"></a></h3>
+<h3 id="enhancement_1">Enhancement<a class="headerlink" href="#enhancement_1" title="Permanent link"></a></h3>
 <ol>
 <li>Iterate Zen Sets object modes by <code>Shift+Ctrl+Wheel Up/Down</code></li>
 <li>Option to alternatively set Collection Parent Selector by <code>Shift+Ctrl+Wheel Up/Down</code></li>
 </ol>
-<h3 id="fix">Fix<a class="headerlink" href="#fix" title="Permanent link"></a></h3>
+<h3 id="fix_1">Fix<a class="headerlink" href="#fix_1" title="Permanent link"></a></h3>
 <ol>
 <li>Tweak and select mode panel was missing in Zen Sets workspace tool</li>
 </ol>
 <h2 id="version-243">Version 2.4.3<a class="headerlink" href="#version-243" title="Permanent link"></a></h2>
-<h3 id="new_2">New:<a class="headerlink" href="#new_2" title="Permanent link"></a></h3>
+<h3 id="new_3">New:<a class="headerlink" href="#new_3" title="Permanent link"></a></h3>
 <ol>
 <li>Added support for <strong>Blender 4.3</strong></li>
 <li>Generic &ldquo;Iterate Groups&rdquo; operator</li>
 <li>Attributes in &ldquo;Sets&rdquo; mode are synchronized with group name (for better Geometry Nodes support)</li>
 </ol>
-<h4 id="enhancement_1">Enhancement:<a class="headerlink" href="#enhancement_1" title="Permanent link"></a></h4>
+<h4 id="enhancement_2">Enhancement:<a class="headerlink" href="#enhancement_2" title="Permanent link"></a></h4>
 <ol>
 <li>Option to switch off Gizmo Help Button in Preferences</li>
 <li>Keymap collision indication</li>
 </ol>
-<h4 id="fix_1">Fix:<a class="headerlink" href="#fix_1" title="Permanent link"></a></h4>
+<h4 id="fix_2">Fix:<a class="headerlink" href="#fix_2" title="Permanent link"></a></h4>
 <ol>
 <li>Can not group similar mesh by material in &ldquo;Auto Groups&rdquo; operator in Blender greater 4.0</li>
 <li>Pie assist is not working in Blender 4.3</li>
 <li>Object collections mode is not working in Blender 4.3</li>
 </ol>
 <h2 id="version-242">Version 2.4.2<a class="headerlink" href="#version-242" title="Permanent link"></a></h2>
-<h4 id="fix_2">Fix:<a class="headerlink" href="#fix_2" title="Permanent link"></a></h4>
+<h4 id="fix_3">Fix:<a class="headerlink" href="#fix_3" title="Permanent link"></a></h4>
 <ol>
 <li>Geometry Node Tools were broken for Blender 4.2</li>
 </ol>
 <h2 id="version-241">Version 2.4.1<a class="headerlink" href="#version-241" title="Permanent link"></a></h2>
-<h3 id="new_3">New:<a class="headerlink" href="#new_3" title="Permanent link"></a></h3>
+<h3 id="new_4">New:<a class="headerlink" href="#new_4" title="Permanent link"></a></h3>
 <ol>
 <li>Option to change N-Panel name from &ldquo;Zen Sets&rdquo; to &ldquo;Zen&rdquo;</li>
 </ol>
-<h4 id="enhancement_2">Enhancement:<a class="headerlink" href="#enhancement_2" title="Permanent link"></a></h4>
+<h4 id="enhancement_3">Enhancement:<a class="headerlink" href="#enhancement_3" title="Permanent link"></a></h4>
 <ol>
 <li>Right menu extended items can be switched off in Preferences</li>
 </ol>
-<h4 id="fix_3">Fix:<a class="headerlink" href="#fix_3" title="Permanent link"></a></h4>
+<h4 id="fix_4">Fix:<a class="headerlink" href="#fix_4" title="Permanent link"></a></h4>
 <ol>
 <li>Sculpt group operations corrected for Blender 4.2</li>
 </ol>
 <h2 id="version-24">Version 2.4<a class="headerlink" href="#version-24" title="Permanent link"></a></h2>
-<h3 id="new_4">New:<a class="headerlink" href="#new_4" title="Permanent link"></a></h3>
+<h3 id="new_5">New:<a class="headerlink" href="#new_5" title="Permanent link"></a></h3>
 <ol>
 <li>Custom scripts</li>
 <li>Nova Export</li>
 </ol>
-<h4 id="enhancement_3">Enhancement:<a class="headerlink" href="#enhancement_3" title="Permanent link"></a></h4>
+<h4 id="enhancement_4">Enhancement:<a class="headerlink" href="#enhancement_4" title="Permanent link"></a></h4>
 <ol>
 <li>Option to convert multiple parent objects to collections</li>
 <li>Batch rename by variables</li>
@@ -433,14 +461,14 @@
 <li>Apply modifiers and transforms before Join objects</li>
 <li>Option to work with Zen Sets in background mode</li>
 </ol>
-<h4 id="fix_4">Fix:<a class="headerlink" href="#fix_4" title="Permanent link"></a></h4>
+<h4 id="fix_5">Fix:<a class="headerlink" href="#fix_5" title="Permanent link"></a></h4>
 <ol>
 <li>Tool scroll not working when some collections are isolated</li>
 <li>Delete group with &ldquo;Hierarchy&rdquo; option does not work in Object Parts mode</li>
 <li>New group name by active object didn&rsquo;t work properly</li>
 </ol>
 <h2 id="version-23">Version 2.3<a class="headerlink" href="#version-23" title="Permanent link"></a></h2>
-<h3 id="new_5">New:<a class="headerlink" href="#new_5" title="Permanent link"></a></h3>
+<h3 id="new_6">New:<a class="headerlink" href="#new_6" title="Permanent link"></a></h3>
 <ol>
 <li>Blender 4.0 Support</li>
 <li>Example Panel</li>
@@ -464,7 +492,7 @@
 <li>Panel in Geometry Node Editor N-Panel</li>
 </ol>
 <h2 id="version-222">Version 2.2.2<a class="headerlink" href="#version-222" title="Permanent link"></a></h2>
-<h3 id="new_6">New:<a class="headerlink" href="#new_6" title="Permanent link"></a></h3>
+<h3 id="new_7">New:<a class="headerlink" href="#new_7" title="Permanent link"></a></h3>
 <h4 id="ui-list">UI List:<a class="headerlink" href="#ui-list" title="Permanent link"></a></h4>
 <ol>
 <li>Option to select multiple groups in list</li>
@@ -477,21 +505,21 @@
 <ol>
 <li>Option to switch off display in View3D and activate only in UV</li>
 </ol>
-<h3 id="fix_5">Fix:<a class="headerlink" href="#fix_5" title="Permanent link"></a></h3>
+<h3 id="fix_6">Fix:<a class="headerlink" href="#fix_6" title="Permanent link"></a></h3>
 <ol>
 <li>Wrong hierarchy of child-parent objects</li>
 <li>Text, metaball objects were not shown</li>
 <li>Mesh groups filtering and sorting were not working properly</li>
 <li>Ensure active object in Group Selector caused error in mesh selector</li>
 </ol>
-<h3 id="enhancement_4">Enhancement:<a class="headerlink" href="#enhancement_4" title="Permanent link"></a></h3>
+<h3 id="enhancement_5">Enhancement:<a class="headerlink" href="#enhancement_5" title="Permanent link"></a></h3>
 <ol>
 <li>Option to change default groups list and objects list row count in preferences</li>
 <li>AutoGroups multi object fix, added presets: Similar by normal, Similar by material</li>
 </ol>
 <hr />
 <h2 id="version-22">Version 2.2<a class="headerlink" href="#version-22" title="Permanent link"></a></h2>
-<h3 id="new_7">New:<a class="headerlink" href="#new_7" title="Permanent link"></a></h3>
+<h3 id="new_8">New:<a class="headerlink" href="#new_8" title="Permanent link"></a></h3>
 <h4 id="draw">Draw:<a class="headerlink" href="#draw" title="Permanent link"></a></h4>
 <p>Python BGL module was replaced with GPU</p>
 <h4 id="ui">UI:<a class="headerlink" href="#ui" title="Permanent link"></a></h4>
@@ -514,7 +542,7 @@
 <li>Select objects visible to the active camera</li>
 <li>Add materials to collections</li>
 </ol>
-<h3 id="enhancement_5">Enhancement:<a class="headerlink" href="#enhancement_5" title="Permanent link"></a></h3>
+<h3 id="enhancement_6">Enhancement:<a class="headerlink" href="#enhancement_6" title="Permanent link"></a></h3>
 <ol>
 <li>Adopt the name of the active object when new group is created</li>
 <li>Option to select object collection if active object is linked to multiple collections</li>
@@ -523,7 +551,7 @@
 </ol>
 <hr />
 <h2 id="version-210">Version 2.1.0<a class="headerlink" href="#version-210" title="Permanent link"></a></h2>
-<h3 id="new_8">New:<a class="headerlink" href="#new_8" title="Permanent link"></a></h3>
+<h3 id="new_9">New:<a class="headerlink" href="#new_9" title="Permanent link"></a></h3>
 <h4 id="list-options">List Options:<a class="headerlink" href="#list-options" title="Permanent link"></a></h4>
 <ol>
 <li>Display only active object collections</li>
@@ -533,26 +561,26 @@
 <li>Set active collection parent or child in 3D View and select all its objects</li>
 <li>Join objects in group and optionally mark them as Zen Sets face, vert parts or Blender face maps</li>
 </ol>
-<h3 id="enhancement_6">Enhancement:<a class="headerlink" href="#enhancement_6" title="Permanent link"></a></h3>
+<h3 id="enhancement_7">Enhancement:<a class="headerlink" href="#enhancement_7" title="Permanent link"></a></h3>
 <ol>
 <li>Group common preferences by tabs</li>
 </ol>
 <hr />
 <h2 id="version-202">Version 2.0.2<a class="headerlink" href="#version-202" title="Permanent link"></a></h2>
-<h3 id="new_9">New:<a class="headerlink" href="#new_9" title="Permanent link"></a></h3>
+<h3 id="new_10">New:<a class="headerlink" href="#new_10" title="Permanent link"></a></h3>
 <h4 id="list-options_1">List Options:<a class="headerlink" href="#list-options_1" title="Permanent link"></a></h4>
 <ol>
 <li>Total area in Face Group</li>
 <li>Total perimeter in Face Group</li>
 <li>Total edge length in Edge Group</li>
 </ol>
-<h3 id="fix_6">Fix:<a class="headerlink" href="#fix_6" title="Permanent link"></a></h3>
+<h3 id="fix_7">Fix:<a class="headerlink" href="#fix_7" title="Permanent link"></a></h3>
 <ol>
 <li>Import Vertex Colors - was not working for Vertex Groups and Face Maps</li>
 </ol>
 <hr />
 <h2 id="version-201">Version 2.0.1<a class="headerlink" href="#version-201" title="Permanent link"></a></h2>
-<h3 id="new_10">New:<a class="headerlink" href="#new_10" title="Permanent link"></a></h3>
+<h3 id="new_11">New:<a class="headerlink" href="#new_11" title="Permanent link"></a></h3>
 <h4 id="pie-menu">Pie Menu:<a class="headerlink" href="#pie-menu" title="Permanent link"></a></h4>
 <ol>
 <li>Rename Group (Collection)</li>
@@ -568,17 +596,17 @@
 <ol>
 <li>Batch Rename Preview and support of regular expressions</li>
 </ol>
-<h3 id="enhancement_7">Enhancement:<a class="headerlink" href="#enhancement_7" title="Permanent link"></a></h3>
+<h3 id="enhancement_8">Enhancement:<a class="headerlink" href="#enhancement_8" title="Permanent link"></a></h3>
 <ol>
 <li>Object Parts draw 2x faster</li>
 </ol>
-<h3 id="fix_7">Fix:<a class="headerlink" href="#fix_7" title="Permanent link"></a></h3>
+<h3 id="fix_8">Fix:<a class="headerlink" href="#fix_8" title="Permanent link"></a></h3>
 <ol>
 <li>Delete All Collections caused error</li>
 </ol>
 <hr />
 <h2 id="version-20">Version 2.0<a class="headerlink" href="#version-20" title="Permanent link"></a></h2>
-<h3 id="new_11">New:<a class="headerlink" href="#new_11" title="Permanent link"></a></h3>
+<h3 id="new_12">New:<a class="headerlink" href="#new_12" title="Permanent link"></a></h3>
 <h4 id="1-vertex-groups-and-face-maps-support-in-zen-sets">1. Vertex Groups and Face Maps Support in Zen Sets<a class="headerlink" href="#1-vertex-groups-and-face-maps-support-in-zen-sets" title="Permanent link"></a></h4>
 <h5 id="11-display-system">1.1. Display System<a class="headerlink" href="#11-display-system" title="Permanent link"></a></h5>
 <ul>
@@ -627,7 +655,7 @@
 <li>Remove selected from all Groups</li>
 <li>Remove Objects with linked data from Groups</li>
 </ul>
-<h3 id="enhancement_8">Enhancement:<a class="headerlink" href="#enhancement_8" title="Permanent link"></a></h3>
+<h3 id="enhancement_9">Enhancement:<a class="headerlink" href="#enhancement_9" title="Permanent link"></a></h3>
 <ol>
 <li>Hide objects after append to hidden Object Set</li>
 <li>Hide viewport, hide select and other status indicator detect object state also</li>
@@ -635,25 +663,25 @@
 <li>If Zen Sets mode is switched off now, it speeds up total addon performance</li>
 <li>Option to Copy Groups with filter by name</li>
 </ol>
-<h3 id="fix_8">Fix:<a class="headerlink" href="#fix_8" title="Permanent link"></a></h3>
+<h3 id="fix_9">Fix:<a class="headerlink" href="#fix_9" title="Permanent link"></a></h3>
 <ol>
 <li>Filters in UI Lists were not working</li>
 </ol>
 <hr />
 <h2 id="version-141">Version 1.4.1<a class="headerlink" href="#version-141" title="Permanent link"></a></h2>
-<h3 id="new_12">New:<a class="headerlink" href="#new_12" title="Permanent link"></a></h3>
+<h3 id="new_13">New:<a class="headerlink" href="#new_13" title="Permanent link"></a></h3>
 <h4 id="tools_5">Tools:<a class="headerlink" href="#tools_5" title="Permanent link"></a></h4>
 <ul>
 <li>Rename Objects as Collection operator.</li>
 <li>Rename Collection as Object operator.</li>
 </ul>
-<h3 id="fix_9">Fix:<a class="headerlink" href="#fix_9" title="Permanent link"></a></h3>
+<h3 id="fix_10">Fix:<a class="headerlink" href="#fix_10" title="Permanent link"></a></h3>
 <ul>
 <li>Fixed Create Objects from Groups in Multi object mode.</li>
 </ul>
 <hr />
 <h2 id="version-14">Version 1.4<a class="headerlink" href="#version-14" title="Permanent link"></a></h2>
-<h3 id="new_13">New:<a class="headerlink" href="#new_13" title="Permanent link"></a></h3>
+<h3 id="new_14">New:<a class="headerlink" href="#new_14" title="Permanent link"></a></h3>
 <h4 id="1-simple-object-sets-and-parts">1. Simple Object Sets and Parts<a class="headerlink" href="#1-simple-object-sets-and-parts" title="Permanent link"></a></h4>
 <ul>
 <li>Highlight Zen Sets Simple Object Sets and Parts</li>
@@ -683,13 +711,13 @@
 </ul>
 <h5 id="43-remove-objects-with-linked-data-from-groups">4.3. Remove Objects with linked data from Groups<a class="headerlink" href="#43-remove-objects-with-linked-data-from-groups" title="Permanent link"></a></h5>
 <p>Makes only unique objects in groups</p>
-<h3 id="enhancement_9">Enhancement:<a class="headerlink" href="#enhancement_9" title="Permanent link"></a></h3>
+<h3 id="enhancement_10">Enhancement:<a class="headerlink" href="#enhancement_10" title="Permanent link"></a></h3>
 <ol>
 <li>Option to change Pie Assist Font Size</li>
 <li>Option to switch off Collection BoundBox</li>
 <li>Option to switch off Auto Update Draw Cache</li>
 </ol>
-<h3 id="fix_10">Fix:<a class="headerlink" href="#fix_10" title="Permanent link"></a></h3>
+<h3 id="fix_11">Fix:<a class="headerlink" href="#fix_11" title="Permanent link"></a></h3>
 <ol>
 <li>Fixed Pie Menu Smart Select renames Collections</li>
 <li>Fixed Draw is not working in Blender 3.3</li>
@@ -697,19 +725,19 @@
 </ol>
 <hr />
 <h2 id="version-134">Version 1.3.4<a class="headerlink" href="#version-134" title="Permanent link"></a></h2>
-<h3 id="fix_11">Fix<a class="headerlink" href="#fix_11" title="Permanent link"></a></h3>
+<h3 id="fix_12">Fix<a class="headerlink" href="#fix_12" title="Permanent link"></a></h3>
 <ol>
 <li>Select option in Group Selector Tool</li>
 </ol>
 <hr />
 <h2 id="version-133">Version 1.3.3<a class="headerlink" href="#version-133" title="Permanent link"></a></h2>
-<h3 id="fix_12">Fix<a class="headerlink" href="#fix_12" title="Permanent link"></a></h3>
+<h3 id="fix_13">Fix<a class="headerlink" href="#fix_13" title="Permanent link"></a></h3>
 <ul>
 <li>Blender 3.2.0 support</li>
 </ul>
 <hr />
 <h2 id="version-130">Version 1.3.0<a class="headerlink" href="#version-130" title="Permanent link"></a></h2>
-<h3 id="new_14">New:<a class="headerlink" href="#new_14" title="Permanent link"></a></h3>
+<h3 id="new_15">New:<a class="headerlink" href="#new_15" title="Permanent link"></a></h3>
 <h4 id="1-uv-support-for-zen-sets">1. UV Support for Zen Sets<a class="headerlink" href="#1-uv-support-for-zen-sets" title="Permanent link"></a></h4>
 <h5 id="11-display-system_1">1.1. Display System<a class="headerlink" href="#11-display-system_1" title="Permanent link"></a></h5>
 <ul>
@@ -737,7 +765,7 @@
 <li>Object Mode filter options: Selected Parents, Selected Collections, Selected Objects</li>
 <li>UV Operations: Select, Append, Intersect, Remove</li>
 </ul>
-<h3 id="enhancement_10">Enhancement:<a class="headerlink" href="#enhancement_10" title="Permanent link"></a></h3>
+<h3 id="enhancement_11">Enhancement:<a class="headerlink" href="#enhancement_11" title="Permanent link"></a></h3>
 <ol>
 <li>Display system detect grab and drag operations</li>
 <li>Indicator if Object Collection is isolated</li>
@@ -745,13 +773,13 @@
 <li>Display Object Pivot state: Transform Origins, Locals, Parents</li>
 <li>Sticky 2D label</li>
 </ol>
-<h3 id="fix_13">Fix:<a class="headerlink" href="#fix_13" title="Permanent link"></a></h3>
+<h3 id="fix_14">Fix:<a class="headerlink" href="#fix_14" title="Permanent link"></a></h3>
 <ol>
 <li>Fixed UI List Drag indicator bug</li>
 </ol>
 <hr />
 <h2 id="version-120">Version 1.2.0<a class="headerlink" href="#version-120" title="Permanent link"></a></h2>
-<h3 id="new_15">New:<a class="headerlink" href="#new_15" title="Permanent link"></a></h3>
+<h3 id="new_16">New:<a class="headerlink" href="#new_16" title="Permanent link"></a></h3>
 <h4 id="1-functionality-for-the-management-of-collections">1. Functionality for the management of collections<a class="headerlink" href="#1-functionality-for-the-management-of-collections" title="Permanent link"></a></h4>
 <h5 id="11-display-system_2">1.1. Display System<a class="headerlink" href="#11-display-system_2" title="Permanent link"></a></h5>
 <ul>
@@ -781,21 +809,21 @@
 <li>Export Group colors to the Active Palette</li>
 <li>Assign color from the Active Palette in sequence or random order</li>
 </ul>
-<h3 id="enhancement_11">Enhancement:<a class="headerlink" href="#enhancement_11" title="Permanent link"></a></h3>
+<h3 id="enhancement_12">Enhancement:<a class="headerlink" href="#enhancement_12" title="Permanent link"></a></h3>
 <ol>
 <li>Isolate-restore functionality in eye-icon</li>
 <li>Option to switch off select after unhide, isolate operations</li>
 <li>Better Zen Sets tool arrangement in N-Panel Tool tab and Sidebar Tool tab</li>
 <li>Removed viewport shading from Zen Sets Groups color icons, so icons now have true color</li>
 </ol>
-<h3 id="fix_14">Fix:<a class="headerlink" href="#fix_14" title="Permanent link"></a></h3>
+<h3 id="fix_15">Fix:<a class="headerlink" href="#fix_15" title="Permanent link"></a></h3>
 <ol>
 <li>Fixed error after Auto Groups undo operation</li>
 <li>Fixed performance drop if Preferences panel was expanded</li>
 </ol>
 <hr />
 <h2 id="version-110">Version 1.1.0<a class="headerlink" href="#version-110" title="Permanent link"></a></h2>
-<h3 id="new_16">New:<a class="headerlink" href="#new_16" title="Permanent link"></a></h3>
+<h3 id="new_17">New:<a class="headerlink" href="#new_17" title="Permanent link"></a></h3>
 <ol>
 <li>N-Panel Toolbar:</li>
 <li>Display Toggle</li>
@@ -813,7 +841,7 @@
 <li>Option to Batch rename Groups</li>
 <li>Auto Groups delimiters: Normal, Material, Seam, Sharp, UVs</li>
 </ol>
-<h3 id="enhancement_12">Enhancement:<a class="headerlink" href="#enhancement_12" title="Permanent link"></a></h3>
+<h3 id="enhancement_13">Enhancement:<a class="headerlink" href="#enhancement_13" title="Permanent link"></a></h3>
 <ol>
 <li>Improved N-Panel interface performance with huge amount of groups (100 and more)</li>
 <li>Avoiding of empty Groups creation in multi-object mode (Add, Append operators)</li>
@@ -823,7 +851,7 @@
 <li>Multi-object groups represention (ability to see only groups in selected objects or in all Scene)</li>
 <li>Inherit only necessary groups in &lsquo;Create Objects from groups&rsquo; operator instead of all Scene groups</li>
 </ol>
-<h3 id="fix_15">Fix:<a class="headerlink" href="#fix_15" title="Permanent link"></a></h3>
+<h3 id="fix_16">Fix:<a class="headerlink" href="#fix_16" title="Permanent link"></a></h3>
 <ol>
 <li>Faces overlay Z-Fight if mesh has transformations</li>
 <li>Edges overlay Z-Fight in all modes</li>

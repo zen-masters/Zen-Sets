@@ -1,10 +1,25 @@
 # Changelog
 
-## Release Note Zen Sets 2.4.5
+## Version 2.5.0
+### New
+1. Added support for **Blender 5.0**
+2. Export Objects Groups to Vertex Color
+3. Export UV Groups Display to an image
+4. Join groups with the same name
+
+### Enhancement
+1. Disable Zen Sets keymaps by categories
+2. Duplicate collection with keeping hidden objects
+
+### Fix
+1. Groups with negative identifiers didn't make a warning while exporting to Sculpt face sets
+2. Groups in Sets Mode could be cleared in rename field editor
+
+## Version 2.4.5
 ### New
 1. Added support for **Blender 4.4**
 
-## Release Note Zen Sets 2.4.4
+## Version 2.4.4
 ### New
 1. Horisontal button layout in Combo Panel
 
